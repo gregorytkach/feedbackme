@@ -4,8 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ManagerBase.h"
 
 
-@interface ManagerPreferences : ManagerBase
+@interface FactoryResponses : NSObject
+
++ (id)createResponse:(NSString *)requestTypeString jsonData:(NSDictionary *)jsonData;
+
 @end

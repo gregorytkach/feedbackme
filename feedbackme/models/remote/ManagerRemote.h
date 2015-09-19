@@ -4,12 +4,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ManagerBase.h"
 
 
-@interface ManagerRemote : NSObject
+@interface ManagerRemote : ManagerBase
 
+- (void)sendRequest:(NSInteger)requestType onComplete:(SEL)onComplete;
 
-- (void)send:(id)data callback:(SEL)callback;
+- (void)sendRequest:(NSInteger)requestType data:(id)data;
 
+- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete;
+
+- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete onError:(SEL)onError;
 
 @end

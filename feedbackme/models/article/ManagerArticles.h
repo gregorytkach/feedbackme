@@ -4,8 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ManagerBase.h"
 
 
-@interface ManagerArticles : NSObject
+@interface ManagerArticles : ManagerBase
 
 @end

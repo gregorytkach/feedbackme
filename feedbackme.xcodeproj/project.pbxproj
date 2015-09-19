@@ -24,6 +24,8 @@
 		DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62BD4A055F2D48697026 /* CategoryInfo.m */; };
 		DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B635D47C327455C9187CB /* FirstViewController.m */; };
 		DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */; };
+		DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6C4FAE764C462E886222 /* FactoryResponses.m */; };
+		DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62D5DA99125147FDDEAD /* ManagerBase.m */; };
 		DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */; };
 		DD0B6F73CC696653EA35C715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6437CE33D878FCA39C39 /* main.m */; };
 		DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */; };
@@ -37,9 +39,12 @@
 		DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPreferences.m; sourceTree = "<group>"; };
 		DD0B60522DFEE0330E542810 /* feedbackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B615C946E7AE818CA96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DD0B617BB5E9EA5074E36C42 /* ManagerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerBase.h; sourceTree = "<group>"; };
 		DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerAddArticle.m; sourceTree = "<group>"; };
+		DD0B625B9C90061A3EA369BE /* ERequestType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERequestType.h; sourceTree = "<group>"; };
 		DD0B62AED7ADB09769132BD2 /* ControllerArticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerArticles.h; sourceTree = "<group>"; };
 		DD0B62BD4A055F2D48697026 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
+		DD0B62D5DA99125147FDDEAD /* ManagerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerBase.m; sourceTree = "<group>"; };
 		DD0B62DF6621D5E6FCD138FD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DD0B6312E49736F7AEC79078 /* ControllerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerArticles.m; sourceTree = "<group>"; };
 		DD0B635D47C327455C9187CB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -51,11 +56,13 @@
 		DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerArticles.m; sourceTree = "<group>"; };
 		DD0B68A3D85621C07FC9BF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD0B692520B8590B614F76C0 /* ManagerRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerRemote.m; sourceTree = "<group>"; };
+		DD0B69456AF5A67AA691D4F4 /* FactoryResponses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactoryResponses.h; sourceTree = "<group>"; };
 		DD0B6983BF4FC41FA0A4D50B /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		DD0B6A00815CB7B099FBB573 /* ArticleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticleInfo.h; sourceTree = "<group>"; };
 		DD0B6A6A1B616CE6E0454791 /* ManagerArticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerArticles.h; sourceTree = "<group>"; };
 		DD0B6B8D7FABA0155280A206 /* AnswerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerInfo.h; sourceTree = "<group>"; };
 		DD0B6B96B0A3EFEFBB0A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD0B6C4FAE764C462E886222 /* FactoryResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryResponses.m; sourceTree = "<group>"; };
 		DD0B6CC279F0499E4D022BAE /* ControllerCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCategories.h; sourceTree = "<group>"; };
 		DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRemote.h; sourceTree = "<group>"; };
 		DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +108,7 @@
 				DD0B67C617EBE598D13ECF68 /* remote */,
 				DD0B62E1707F9B5CF82DCE71 /* article */,
 				DD0B66029BA577AE478061CF /* preferences */,
+				DD0B6C57A62598BA80C62A4A /* base */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -169,6 +177,9 @@
 			children = (
 				DD0B692520B8590B614F76C0 /* ManagerRemote.m */,
 				DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */,
+				DD0B625B9C90061A3EA369BE /* ERequestType.h */,
+				DD0B6C4FAE764C462E886222 /* FactoryResponses.m */,
+				DD0B69456AF5A67AA691D4F4 /* FactoryResponses.h */,
 			);
 			path = remote;
 			sourceTree = "<group>";
@@ -198,6 +209,15 @@
 				DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */,
 			);
 			path = view_article;
+			sourceTree = "<group>";
+		};
+		DD0B6C57A62598BA80C62A4A /* base */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B62D5DA99125147FDDEAD /* ManagerBase.m */,
+				DD0B617BB5E9EA5074E36C42 /* ManagerBase.h */,
+			);
+			path = base;
 			sourceTree = "<group>";
 		};
 		DD0B6F61C89D03AC2E1F2BAA = {
@@ -299,6 +319,8 @@
 				DD0B6675BD8672009F3FBF12 /* ControllerArticles.m in Sources */,
 				DD0B6880BCE75CC9936144BE /* ControllerCategories.m in Sources */,
 				DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */,
+				DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */,
+				DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

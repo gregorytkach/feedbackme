@@ -6,6 +6,8 @@
 #import <Foundation/Foundation.h>
 
 @class ManagerRemote;
+@class ManagerArticles;
+@class ManagerPreferences;
 
 @interface AppInfo : NSObject
 
@@ -20,7 +22,12 @@
  *  Properties
  */
 
+- (ManagerArticles *)managerArticles;
+
+- (ManagerPreferences *)managerPreferences;
+
 - (ManagerRemote *)managerRemote;
+
 
 
 /*

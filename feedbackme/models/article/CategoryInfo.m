@@ -10,4 +10,21 @@
 {
 
 }
+
+- (int)sortType
+{
+    return 0;
+}
+
+- (int)type
+{
+    return 0;
+}
+
+- (NSString *)urlImage
+{
+    return nil;
+}
+
+
 @end

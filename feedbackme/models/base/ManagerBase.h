@@ -4,8 +4,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ManagerBase.h"
 
 
-@interface ManagerPreferences : ManagerBase
+@interface ManagerBase : NSObject
+
+
+/*
+ *  Methods
+ */
+
+- (void)postInit;
+
 @end

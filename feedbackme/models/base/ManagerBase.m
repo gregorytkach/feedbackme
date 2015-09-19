@@ -3,9 +3,22 @@
 // Copyright (c) 2015 ___FULLUSERNAME___. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "ManagerBase.h"
 
 
-@interface ManagerPreferences : ManagerBase
+@implementation ManagerBase
+{
+
+}
+
+/*
+ *  Methods
+ */
+
+- (void)postInit
+{
+
+}
+
+
 @end
