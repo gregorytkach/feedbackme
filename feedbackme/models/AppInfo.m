@@ -5,10 +5,16 @@
 
 #import "AppInfo.h"
 #import "ManagerRemote.h"
+#import "ManagerArticles.h"
+#import "ManagerPreferences.h"
 
 
 @implementation AppInfo
 {
+    NSMutableArray *_managers;
+
+    ManagerArticles *_managerArticles;
+    ManagerPreferences *_managerPreferences;
     ManagerRemote *_managerRemote;
 }
 
@@ -16,13 +22,12 @@
 {
     static AppInfo *_instance = nil;
 
-    static dispatch_once_t onceToken;
-
     @synchronized (self)
     {
         if (_instance == nil)
         {
             _instance = [[self alloc] init];
+            [_instance postInit];
         }
 
     };
@@ -34,6 +39,16 @@
  *  Properties
  */
 
+- (ManagerArticles *)managerArticles
+{
+    return _managerArticles;
+}
+
+- (ManagerPreferences *)managerPreferences
+{
+    return _managerPreferences;
+}
+
 - (ManagerRemote *)managerRemote
 {
     return _managerRemote;
@@ -43,5 +58,39 @@
 /*
  *  Methods
  */
+
+- (id)init
+{
+    self = [super init];
+
+    if (self != nil)
+    {
+        [self initInternal];
+    }
+
+    return self;
+}
+
+- (void)initInternal
+{
+    _managers = [NSMutableArray array];
+
+    _managerArticles = [[ManagerArticles alloc] init];
+    [_managers addObject:_managerArticles];
+
+    _managerPreferences = [[ManagerPreferences alloc] init];
+    [_managers addObject:_managerPreferences];
+
+    _managerRemote = [[ManagerRemote alloc] init];
+    [_managers addObject:_managerRemote];
+}
+
+- (void)postInit
+{
+       for(ManagerBase *manager in _managers)
+       {
+           [manager postInit];
+       }
+}
 
 @end

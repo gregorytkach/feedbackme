@@ -9,10 +9,16 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "AppInfo.h"
 
 
-int main(int argc, char * argv[]) {
-    @autoreleasepool {
+int main(int argc, char *argv[])
+{
+    @autoreleasepool
+    {
+        //app info initialization
+        [AppInfo instance];
+
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 
