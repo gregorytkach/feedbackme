@@ -8,4 +8,8 @@
 
 
 @interface ControllerArticle : UIViewController
+{
+    IBOutlet UILabel *labelText;
+}
+
 @end

@@ -14,6 +14,15 @@
 - (void)send:(id)data callback:(SEL)callback
 {
 
+    NSData *returnedData = nil;
+
+    NSDictionary * response = [NSJSONSerialization JSONObjectWithData:returnedData options:0 error:&error];
+
+    if (callback != nil)
+    {
+        [self performSelectorOnMainThread:callback withObject:response waitUntilDone:false];
+    }
+
 }
 
 
