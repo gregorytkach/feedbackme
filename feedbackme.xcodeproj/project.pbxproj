@@ -21,14 +21,14 @@
 		DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */; };
 		DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */; };
 		DD0B6F73CC696653EA35C715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6437CE33D878FCA39C39 /* main.m */; };
-		DD0B6F992B8FE6B0205A64B2 /* ViewControllerAddArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */; };
+		DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPreferences.m; sourceTree = "<group>"; };
 		DD0B60522DFEE0330E542810 /* feedbackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B615C946E7AE818CA96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAddArticle.m; sourceTree = "<group>"; };
+		DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerAddArticle.m; sourceTree = "<group>"; };
 		DD0B62BD4A055F2D48697026 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
 		DD0B62DF6621D5E6FCD138FD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DD0B635D47C327455C9187CB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		DD0B6B96B0A3EFEFBB0A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRemote.h; sourceTree = "<group>"; };
 		DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DD0B6D8955CFAA0091D6197E /* ViewControllerAddArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerAddArticle.h; sourceTree = "<group>"; };
+		DD0B6D8955CFAA0091D6197E /* ControllerAddArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerAddArticle.h; sourceTree = "<group>"; };
 		DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
@@ -111,8 +111,8 @@
 		DD0B639B9A6CF880FDD95288 /* add_article */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B6D8955CFAA0091D6197E /* ViewControllerAddArticle.h */,
-				DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */,
+				DD0B6D8955CFAA0091D6197E /* ControllerAddArticle.h */,
+				DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */,
 			);
 			path = add_article;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
 				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,
 				DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */,
-				DD0B6F992B8FE6B0205A64B2 /* ViewControllerAddArticle.m in Sources */,
+				DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

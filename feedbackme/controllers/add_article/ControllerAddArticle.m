@@ -1,5 +1,5 @@
 //
-//  ViewControllerAddArticle.m
+//  ControllerAddArticle.m
 //  feedbackme
 //
 //  Created by Gregory Tkach on 9/19/15.
@@ -7,14 +7,14 @@
 //
 
 
-#import "ViewControllerAddArticle.h"
+#import "ControllerAddArticle.h"
 
 
-@interface ViewControllerAddArticle ()
+@interface ControllerAddArticle ()
 
 @end
 
-@implementation ViewControllerAddArticle
+@implementation ControllerAddArticle
 
 
 - (void)viewDidLoad {

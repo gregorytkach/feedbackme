@@ -1,5 +1,5 @@
 //
-//  ViewControllerAddArticle.h
+//  ControllerAddArticle.h
 //  feedbackme
 //
 //  Created by Gregory Tkach on 9/19/15.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ViewControllerAddArticle : UIViewController
+@interface ControllerAddArticle : UIViewController
 
 
 @end
