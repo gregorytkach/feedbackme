@@ -9,7 +9,8 @@
 
 @interface ControllerArticle : UIViewController
 {
-    IBOutlet UILabel *labelText;
+    IBOutlet UILabel *currentTitle;
+    IBOutlet UILabel *currentText;
+    IBOutlet UIImageView *currentImage;
 }
-
 @end

@@ -17,7 +17,6 @@
 		DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B649E6A7D873A213E2F77 /* Main.storyboard */; };
 		DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */; };
 		DD0B6675BD8672009F3FBF12 /* ControllerArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6312E49736F7AEC79078 /* ControllerArticles.m */; };
-		DD0B66B7EB650EDD04CBE1D9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DD0B615C946E7AE818CA96D0 /* Info.plist */; };
 		DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */; };
 		DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */; };
 		DD0B6880BCE75CC9936144BE /* ControllerCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6DB3F2FCD89B4C4106EF /* ControllerCategories.m */; };
@@ -265,9 +264,10 @@
 		DD0B6E583B07783535425A38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 			};
-			buildConfigurationList = DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "feedbackme" */;
+			buildConfigurationList = DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "FeedBackMe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -289,7 +289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD0B66B7EB650EDD04CBE1D9 /* Info.plist in Resources */,
 				DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */,
 				DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */,
 				DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */,
@@ -351,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = feedbackme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -430,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -442,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = feedbackme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,16 +459,16 @@
 				DD0B665942632B218450440B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "feedbackme" */ = {
+		DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "FeedBackMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD0B6AC275B07CD26E84424E /* Debug */,
 				DD0B6B27BB68E9069A8074CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
