@@ -10,4 +10,22 @@
 
 //todo:finish it
 
+/*
+ *  Properties
+ */
+
+- (NSString *)id;
+
+- (NSString *)title;
+
+- (NSString *)urlImage;
+
+- (NSString *)text;
+
+- (NSString *)question;
+
+//! Array of AnswerInfo
+- (NSArray *)answers;
+
+
 @end
