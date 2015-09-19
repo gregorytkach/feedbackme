@@ -8,4 +8,9 @@
 
 
 @interface ControllerArticle : UIViewController
+{
+    IBOutlet UILabel *currentTitle;
+    IBOutlet UILabel *currentText;
+    IBOutlet UIImageView *currentImage;
+}
 @end

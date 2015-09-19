@@ -18,7 +18,7 @@
 
 - (NSString *)title
 {
-    return nil;
+    return @"some title";
 }
 
 - (NSString *)urlImage
@@ -28,7 +28,7 @@
 
 - (NSString *)text
 {
-    return nil;
+    return @"some text";
 }
 
 - (NSString *)question
