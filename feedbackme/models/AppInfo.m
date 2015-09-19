@@ -4,10 +4,6 @@
 //
 
 #import "AppInfo.h"
-#import "ManagerRemote.h"
-#import "ManagerArticles.h"
-#import "ManagerPreferences.h"
-
 
 @implementation AppInfo
 {

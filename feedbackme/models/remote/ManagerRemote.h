@@ -9,6 +9,10 @@
 
 @interface ManagerRemote : ManagerBase
 
+/*
+ *  Requests
+ */
+
 - (void)sendRequest:(NSInteger)requestType onComplete:(SEL)onComplete;
 
 - (void)sendRequest:(NSInteger)requestType data:(id)data;
@@ -16,5 +20,11 @@
 - (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete;
 
 - (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete onError:(SEL)onError;
+
+/*
+ * Download file
+ */
+
+-(void)downloadImageFrom:(NSString *)urlImage callback:(SEL)callback;
 
 @end

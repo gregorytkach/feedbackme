@@ -47,11 +47,32 @@
 //    }
 }
 
+- (void)getRequestTo:(NSString *)url
+{
+    NSURL * urlObject = [NSURL URLWithString:url];
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:urlObject cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+
+    [request setHTTPMethod:@"GET"];
+
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+}
+
 - (BOOL)_isResponseError:(NSDictionary *)jsonData
 {
-    NSString *status = jsonData[@"status"];
-    
+    NSString * status = jsonData[@"status"];
+
     return status == nil || [status isEqualToString:@"error"];
+}
+
+- (void)downloadImageFrom:(NSString *)urlImage callback:(SEL)callback
+{
+    //todo:finish it
+//    NSURL * url = [NSURL URLWithString:@"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg"];
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+//    UIImage *result = [[UIImage alloc] initWithData:data];
+
+//    return result;
 }
 
 @end

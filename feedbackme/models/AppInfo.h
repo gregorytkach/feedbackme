@@ -4,10 +4,9 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class ManagerRemote;
-@class ManagerArticles;
-@class ManagerPreferences;
+#import "ManagerRemote.h"
+#import "ManagerArticles.h"
+#import "ManagerPreferences.h"
 
 @interface AppInfo : NSObject
 

@@ -5,21 +5,14 @@
 
 #import "ControllerArticle.h"
 #import "ArticleInfo.h"
+#import "AppInfo.h"
+#import "ManagerRemote.h"
 
 
 @implementation ControllerArticle {
     ArticleInfo *_currentArticle;
 
 }
-
-- (UIImage *)downloadURLImage {
-    NSURL *url = [NSURL URLWithString:@"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg"];
-    NSData *data = [NSData dataWithContentsOfURL:url];
-    UIImage *result = [[UIImage alloc] initWithData:data];
-
-    return result;
-}
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,8 +23,13 @@
     currentTitle.text = _currentArticle.title;
     //todo:finish it
     //  currentImage.images = _currentArticle.urlImage;
-    currentImage.image = [self downloadURLImage];
 
+    NSString *urlImage = @"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg";
+
+    //todo:setup callback
+    [AppInfo.instance.managerRemote downloadImageFrom:urlImage callback:nil];
+
+//    currentImage.image = ;
 
     currentText.text = _currentArticle.text;
 
