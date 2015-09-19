@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C025C0A1BAD6C8900538873 /* ControllerViewArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C091BAD6C8900538873 /* ControllerViewArticles.m */; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
 		DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */; };
 		DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C025C081BAD6C8900538873 /* ControllerViewArticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerViewArticles.h; path = feedbackme/ControllerViewArticles.h; sourceTree = SOURCE_ROOT; };
+		0C025C091BAD6C8900538873 /* ControllerViewArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControllerViewArticles.m; path = feedbackme/ControllerViewArticles.m; sourceTree = SOURCE_ROOT; };
 		DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPreferences.m; sourceTree = "<group>"; };
 		DD0B60522DFEE0330E542810 /* feedbackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B615C946E7AE818CA96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 		DD0B601245D827F12D150BDC /* view_articles_list */ = {
 			isa = PBXGroup;
 			children = (
+				0C025C081BAD6C8900538873 /* ControllerViewArticles.h */,
+				0C025C091BAD6C8900538873 /* ControllerViewArticles.m */,
 			);
 			path = view_articles_list;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
 				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,
+				0C025C0A1BAD6C8900538873 /* ControllerViewArticles.m in Sources */,
 				DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */,
 				DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */,
 			);
@@ -406,6 +412,7 @@
 				DD0B665942632B218450440B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "feedbackme" */ = {
 			isa = XCConfigurationList;
