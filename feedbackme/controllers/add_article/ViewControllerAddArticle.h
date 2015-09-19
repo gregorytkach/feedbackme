@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  ViewControllerAddArticle.h
 //  feedbackme
 //
 //  Created by Gregory Tkach on 9/19/15.
@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SecondViewController : UIViewController
+@interface ViewControllerAddArticle : UIViewController
 
 
 @end

@@ -19,15 +19,16 @@
 		DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62BD4A055F2D48697026 /* CategoryInfo.m */; };
 		DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B635D47C327455C9187CB /* FirstViewController.m */; };
 		DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */; };
-		DD0B6C07675C725F08EA9EFC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B678E1449371234097F0E /* SecondViewController.m */; };
 		DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */; };
 		DD0B6F73CC696653EA35C715 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6437CE33D878FCA39C39 /* main.m */; };
+		DD0B6F992B8FE6B0205A64B2 /* ViewControllerAddArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPreferences.m; sourceTree = "<group>"; };
 		DD0B60522DFEE0330E542810 /* feedbackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B615C946E7AE818CA96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerAddArticle.m; sourceTree = "<group>"; };
 		DD0B62BD4A055F2D48697026 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
 		DD0B62DF6621D5E6FCD138FD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DD0B635D47C327455C9187CB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
@@ -35,7 +36,6 @@
 		DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerInfo.m; sourceTree = "<group>"; };
 		DD0B6437CE33D878FCA39C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD0B65F20DFF3A9B7F321279 /* ManagerPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerPreferences.h; sourceTree = "<group>"; };
-		DD0B678E1449371234097F0E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		DD0B67F3E1FF330770973509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerArticles.m; sourceTree = "<group>"; };
 		DD0B68A3D85621C07FC9BF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -47,9 +47,9 @@
 		DD0B6B96B0A3EFEFBB0A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRemote.h; sourceTree = "<group>"; };
 		DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD0B6D8955CFAA0091D6197E /* ViewControllerAddArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerAddArticle.h; sourceTree = "<group>"; };
 		DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
-		DD0B6EAC2BB8A1786E6D5601 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
 		DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +65,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD0B601245D827F12D150BDC /* view_articles_list */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view_articles_list;
+			sourceTree = "<group>";
+		};
 		DD0B60C54FE9C5FAC680C4E8 /* models */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +108,28 @@
 			path = article;
 			sourceTree = "<group>";
 		};
+		DD0B639B9A6CF880FDD95288 /* add_article */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B6D8955CFAA0091D6197E /* ViewControllerAddArticle.h */,
+				DD0B618D26DD4D91832A23A4 /* ViewControllerAddArticle.m */,
+			);
+			path = add_article;
+			sourceTree = "<group>";
+		};
 		DD0B63ADFCC247D0A43CE081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				DD0B6437CE33D878FCA39C39 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD0B656453EA5B51F87A6438 /* view_categories_list */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view_categories_list;
 			sourceTree = "<group>";
 		};
 		DD0B66029BA577AE478061CF /* preferences */ = {
@@ -139,12 +162,17 @@
 				DD0B649E6A7D873A213E2F77 /* Main.storyboard */,
 				DD0B62DF6621D5E6FCD138FD /* FirstViewController.h */,
 				DD0B635D47C327455C9187CB /* FirstViewController.m */,
-				DD0B6EAC2BB8A1786E6D5601 /* SecondViewController.h */,
-				DD0B678E1449371234097F0E /* SecondViewController.m */,
 				DD0B60C54FE9C5FAC680C4E8 /* models */,
 				DD0B6FA3B005EF872E5B47BB /* controllers */,
 			);
 			path = feedbackme;
+			sourceTree = "<group>";
+		};
+		DD0B6AB8FA337306848EBAB3 /* view_article */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view_article;
 			sourceTree = "<group>";
 		};
 		DD0B6F61C89D03AC2E1F2BAA = {
@@ -158,6 +186,10 @@
 		DD0B6FA3B005EF872E5B47BB /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD0B639B9A6CF880FDD95288 /* add_article */,
+				DD0B6AB8FA337306848EBAB3 /* view_article */,
+				DD0B601245D827F12D150BDC /* view_articles_list */,
+				DD0B656453EA5B51F87A6438 /* view_categories_list */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -229,7 +261,6 @@
 				DD0B6F73CC696653EA35C715 /* main.m in Sources */,
 				DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */,
 				DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */,
-				DD0B6C07675C725F08EA9EFC /* SecondViewController.m in Sources */,
 				DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */,
 				DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */,
 				DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */,
@@ -237,6 +268,7 @@
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
 				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,
 				DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */,
+				DD0B6F992B8FE6B0205A64B2 /* ViewControllerAddArticle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

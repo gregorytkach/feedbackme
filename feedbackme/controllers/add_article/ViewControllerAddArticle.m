@@ -1,5 +1,5 @@
 //
-//  SecondViewController.m
+//  ViewControllerAddArticle.m
 //  feedbackme
 //
 //  Created by Gregory Tkach on 9/19/15.
@@ -7,14 +7,14 @@
 //
 
 
-#import "SecondViewController.h"
+#import "ViewControllerAddArticle.h"
 
 
-@interface SecondViewController ()
+@interface ViewControllerAddArticle ()
 
 @end
 
-@implementation SecondViewController
+@implementation ViewControllerAddArticle
 
 
 - (void)viewDidLoad {
