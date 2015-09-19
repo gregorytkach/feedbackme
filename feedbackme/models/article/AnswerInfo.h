@@ -6,6 +6,16 @@
 #import <Foundation/Foundation.h>
 
 
-@interface ManagerArticles : NSObject
+@interface AnswerInfo : NSObject
+
+/*
+ * Properites
+ */
+
+- (NSInteger)votes;
+
+- (float)percent;
+
+- (NSString *)answer;
 
 @end

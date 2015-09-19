@@ -10,4 +10,36 @@
 {
 
 }
+
+- (NSString *)id
+{
+    return nil;
+}
+
+- (NSString *)title
+{
+    return nil;
+}
+
+- (NSString *)urlImage
+{
+    return nil;
+}
+
+- (NSString *)text
+{
+    return nil;
+}
+
+- (NSString *)question
+{
+    return nil;
+}
+
+- (NSArray *)answers
+{
+    return nil;
+}
+
+
 @end
