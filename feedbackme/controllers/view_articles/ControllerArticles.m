@@ -1,18 +1,18 @@
 //
-//  ControllerViewArticles.m
+//  ControllerArticles.m
 //  feedbackme
 //
 //  Created by Казанцев Алексей on 9/19/15.
 //  Copyright (c) 2015 Казанцев Алексей. All rights reserved.
 //
 
-#import "ControllerViewArticles.h"
+#import "ControllerArticles.h"
 
-@interface ControllerViewArticles ()
+@interface ControllerArticles ()
 
 @end
 
-@implementation ControllerViewArticles
+@implementation ControllerArticles
 
 - (void)viewDidLoad {
     [super viewDidLoad];

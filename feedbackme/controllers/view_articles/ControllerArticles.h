@@ -1,5 +1,5 @@
 //
-//  ControllerViewArticles.h
+//  ControllerArticles.h
 //  feedbackme
 //
 //  Created by Казанцев Алексей on 9/19/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ControllerViewArticles : UIViewController
+@interface ControllerArticles : UIViewController
 
 @end
