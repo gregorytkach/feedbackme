@@ -83,13 +83,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
-<<<<<<< HEAD
-                        <outlet property="labelText" destination="KQZ-1w-vlD" id="TxU-eM-YRE"/>
-=======
                         <outlet property="currentImage" destination="2KT-5X-nVs" id="vyc-gJ-tfx"/>
                         <outlet property="currentText" destination="XDm-wi-AjN" id="kPb-bs-fTQ"/>
                         <outlet property="currentTitle" destination="Lx5-Bj-U0i" id="owW-9e-WHu"/>
->>>>>>> 1eb51d659055ab40870bc5434a6e4ed05ff427d6
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
