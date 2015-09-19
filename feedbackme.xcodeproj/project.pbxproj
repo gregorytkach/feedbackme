@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C025C0D1BAD72B900538873 /* ViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */; };
+		0C025C101BAD73C900538873 /* ViewCellWithCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
 		DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */; };
 		DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */; };
@@ -28,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C025C0B1BAD72B900538873 /* ViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCellWithImage.h; sourceTree = "<group>"; };
+		0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCellWithImage.m; sourceTree = "<group>"; };
+		0C025C0E1BAD73C900538873 /* ViewCellWithCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCellWithCategory.h; sourceTree = "<group>"; };
+		0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCellWithCategory.m; sourceTree = "<group>"; };
 		DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPreferences.m; sourceTree = "<group>"; };
 		DD0B60522DFEE0330E542810 /* feedbackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = feedbackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0B615C946E7AE818CA96D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +85,10 @@
 			children = (
 				DD0B62AED7ADB09769132BD2 /* ControllerArticles.h */,
 				DD0B6312E49736F7AEC79078 /* ControllerArticles.m */,
+				0C025C0B1BAD72B900538873 /* ViewCellWithImage.h */,
+				0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */,
+				0C025C0E1BAD73C900538873 /* ViewCellWithCategory.h */,
+				0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */,
 			);
 			path = view_articles;
 			sourceTree = "<group>";
@@ -279,6 +289,8 @@
 				DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */,
 				DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */,
 				DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */,
+				0C025C101BAD73C900538873 /* ViewCellWithCategory.m in Sources */,
+				0C025C0D1BAD72B900538873 /* ViewCellWithImage.m in Sources */,
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
 				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,
