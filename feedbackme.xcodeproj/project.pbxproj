@@ -164,8 +164,8 @@
 			children = (
 				DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */,
 				DD0B6A6A1B616CE6E0454791 /* ManagerArticles.h */,
-				DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */,
 				DD0B6A00815CB7B099FBB573 /* ArticleInfo.h */,
+				DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */,
 				DD0B62BD4A055F2D48697026 /* CategoryInfo.m */,
 				DD0B638653165E68B560D45A /* CategoryInfo.h */,
 				DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */,
@@ -256,8 +256,8 @@
 		DD0B6AB8FA337306848EBAB3 /* view_article */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */,
 				DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */,
+				DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */,
 			);
 			path = view_article;
 			sourceTree = "<group>";
@@ -324,6 +324,11 @@
 			attributes = {
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					DD0B62CD38E903EBD6A556CC = {
+						DevelopmentTeam = UN4HT84AGH;
+					};
+				};
 			};
 			buildConfigurationList = DD0B6F1471377521F30DD02B /* Build configuration list for PBXProject "feedbackme" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -459,11 +464,14 @@
 			baseConfigurationReference = 86A0CDD6307EBEB3DB3EC647 /* Pods-feedbackme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = feedbackme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -552,11 +560,14 @@
 			baseConfigurationReference = 6490C8A9D9E708372F6B33A2 /* Pods-feedbackme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = feedbackme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};

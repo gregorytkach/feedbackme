@@ -9,8 +9,12 @@
 
 @interface ControllerArticle : UIViewController
 {
+   
     IBOutlet UILabel *currentTitle;
-    IBOutlet UILabel *currentText;
     IBOutlet UIImageView *currentImage;
-}
+    IBOutlet UILabel *currentText;
+    IBOutlet UILabel *currentQuestion;
+    }
+-(void)createVoteButtons;
+
 @end

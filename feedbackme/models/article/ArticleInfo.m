@@ -23,12 +23,13 @@
 
 - (NSString *)urlImage
 {
-    return @"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg";
+    return @"https://pp.vk.me/c625317/v625317639/49e64/GFd_A2u60GI.jpg";
 }
 
 - (NSString *)text
 {
-    return @"some text";
+    return @"Доктор Кто» (англ. Doctor Who, МФА: [ˈdɒk.tə(ɹ) huː]) — культовыйбританский научно-фантастический телесериал компании «Би-би-си» об инопланетном путешественнике во времени, известном как Доктор[1]. Вместе со своими спутниками он путешествует во времени и пространстве как для спасения целых цивилизаций, так и для собственного удовольствия.Доктор Кто» — самый продолжительный научно-фантастический сериал в мире, важная часть массовой культуры Великобритании и многих других стран.\n"
+            "left eight chars.";
 }
 
 - (NSString *)question
@@ -38,7 +39,15 @@
 
 - (NSArray *)answers
 {
-    return nil;
+    NSMutableArray *result = [[NSMutableArray alloc] init];
+
+    for (int i; i < 3; i++)
+    {
+        NSString * value = [NSString stringWithFormat:@"%i", i];
+        [result addObject:value];
+    }
+
+    return result;
 }
 
 
