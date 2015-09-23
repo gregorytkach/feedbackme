@@ -21,9 +21,11 @@
     return @"some title";
 }
 
-- (NSString *)urlImage
+- (NSData *)urlImage
 {
-    return nil;
+    NSData * result = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString: @"https://pp.vk.me/c625317/v625317639/49e64/GFd_A2u60GI.jpg"]];
+    
+    return result;
 }
 
 - (NSString *)text

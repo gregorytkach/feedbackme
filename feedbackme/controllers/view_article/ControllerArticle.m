@@ -5,36 +5,40 @@
 
 #import "ControllerArticle.h"
 #import "ArticleInfo.h"
-#import "AppInfo.h"
-#import "ManagerRemote.h"
+
 
 
 @implementation ControllerArticle {
+    
     ArticleInfo *_currentArticle;
-
+    
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    //todo:remove this stub
+
     _currentArticle = [[ArticleInfo alloc] init];
 
     currentTitle.text = _currentArticle.title;
-    //todo:finish it
-    //  currentImage.images = _currentArticle.urlImage;
 
-    NSString *urlImage = @"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg";
-
-    //todo:setup callback
-    [AppInfo.instance.managerRemote downloadImageFrom:urlImage callback:nil];
-
-//    currentImage.image = ;
+    currentImage.image = self.convertDataToImage;
 
     currentText.text = _currentArticle.text;
+    
+    currentQuestion.text = _currentArticle.question;
+    
 
-    // Do any additional setup after loading the view, typically from a nib.
 }
+
+-(UIImage *) convertDataToImage {
+
+    UIImage *result = [UIImage imageWithData:_currentArticle.urlImage];
+
+    return result;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
