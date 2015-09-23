@@ -15,8 +15,6 @@
     IBOutlet UILabel *currentText;
     IBOutlet UILabel *currentQuestion;
     }
-
-
--(UIImage *) convertDataToImage;
+-(void)createVoteButtons;
 
 @end
