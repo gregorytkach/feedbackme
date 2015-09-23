@@ -24,12 +24,6 @@
 
     currentTitle.text = _currentArticle.title;
 
-    NSString *urlImage = @"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg";
-
-    //todo:setup callback
-    [AppInfo.instance.managerRemote downloadImageFrom:urlImage callback:nil];
-
-//    currentImage.image 
 
     currentText.text = _currentArticle.text;
 

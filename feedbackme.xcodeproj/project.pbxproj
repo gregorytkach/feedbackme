@@ -18,7 +18,6 @@
 		DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B649E6A7D873A213E2F77 /* Main.storyboard */; };
 		DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */; };
 		DD0B6675BD8672009F3FBF12 /* ControllerArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6312E49736F7AEC79078 /* ControllerArticles.m */; };
-		DD0B674C7E573FFCC6681F1D /* RemoteHelperRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B67328DAFD76C33B91EE6 /* RemoteHelperRequest.m */; };
 		DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */; };
 		DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */; };
 		DD0B6842D3CCB6797E4F7973 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6942423DC0F8882A4DF1 /* Podfile */; };
@@ -26,7 +25,6 @@
 		DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62BD4A055F2D48697026 /* CategoryInfo.m */; };
 		DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B635D47C327455C9187CB /* FirstViewController.m */; };
 		DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */; };
-		DD0B6B59072A977DCB68600C /* RemoteHelperLoadImage.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6FD477468CDBAA927789 /* RemoteHelperLoadImage.m */; };
 		DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6C4FAE764C462E886222 /* FactoryResponses.m */; };
 		DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62D5DA99125147FDDEAD /* ManagerBase.m */; };
 		DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */; };
@@ -58,10 +56,8 @@
 		DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerInfo.m; sourceTree = "<group>"; };
 		DD0B6437CE33D878FCA39C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DD0B65F20DFF3A9B7F321279 /* ManagerPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerPreferences.h; sourceTree = "<group>"; };
-		DD0B67328DAFD76C33B91EE6 /* RemoteHelperRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteHelperRequest.m; sourceTree = "<group>"; };
 		DD0B67F3E1FF330770973509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerArticles.m; sourceTree = "<group>"; };
-		DD0B685E09B9E16AB04BEF7B /* RemoteHelperLoadImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteHelperLoadImage.h; sourceTree = "<group>"; };
 		DD0B68A3D85621C07FC9BF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD0B692520B8590B614F76C0 /* ManagerRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerRemote.m; sourceTree = "<group>"; };
 		DD0B6942423DC0F8882A4DF1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
@@ -74,7 +70,6 @@
 		DD0B6BDC5E6439A75C20FD7E /* UtilsCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCallbacks.h; sourceTree = "<group>"; };
 		DD0B6C4FAE764C462E886222 /* FactoryResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryResponses.m; sourceTree = "<group>"; };
 		DD0B6CC279F0499E4D022BAE /* ControllerCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCategories.h; sourceTree = "<group>"; };
-		DD0B6CC491CBDF7EA0A8137B /* RemoteHelperRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemoteHelperRequest.h; sourceTree = "<group>"; };
 		DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRemote.h; sourceTree = "<group>"; };
 		DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD0B6D8955CFAA0091D6197E /* ControllerAddArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerAddArticle.h; sourceTree = "<group>"; };
@@ -85,7 +80,6 @@
 		DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerArticle.h; sourceTree = "<group>"; };
 		DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
 		DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleInfo.m; sourceTree = "<group>"; };
-		DD0B6FD477468CDBAA927789 /* RemoteHelperLoadImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemoteHelperLoadImage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,17 +195,6 @@
 			path = view_categories;
 			sourceTree = "<group>";
 		};
-		DD0B657116A8769D57A1BCBA /* helpers */ = {
-			isa = PBXGroup;
-			children = (
-				DD0B6FD477468CDBAA927789 /* RemoteHelperLoadImage.m */,
-				DD0B685E09B9E16AB04BEF7B /* RemoteHelperLoadImage.h */,
-				DD0B67328DAFD76C33B91EE6 /* RemoteHelperRequest.m */,
-				DD0B6CC491CBDF7EA0A8137B /* RemoteHelperRequest.h */,
-			);
-			path = helpers;
-			sourceTree = "<group>";
-		};
 		DD0B66029BA577AE478061CF /* preferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,7 +212,6 @@
 				DD0B625B9C90061A3EA369BE /* ERequestType.h */,
 				DD0B6C4FAE764C462E886222 /* FactoryResponses.m */,
 				DD0B69456AF5A67AA691D4F4 /* FactoryResponses.h */,
-				DD0B657116A8769D57A1BCBA /* helpers */,
 			);
 			path = remote;
 			sourceTree = "<group>";
@@ -432,8 +414,6 @@
 				DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */,
 				DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */,
 				DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */,
-				DD0B6B59072A977DCB68600C /* RemoteHelperLoadImage.m in Sources */,
-				DD0B674C7E573FFCC6681F1D /* RemoteHelperRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
