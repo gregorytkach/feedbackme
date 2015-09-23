@@ -3,16 +3,37 @@
 // Copyright (c) 2015 ___FULLUSERNAME___. All rights reserved.
 //
 
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 #import "ManagerRemote.h"
 
 
+typedef void (^CALLBACK_RESPONSE_OK)(AFHTTPRequestOperation *operation, id responseObject);
+
+typedef void (^CALLBACK_RESPONSE_ERROR)(AFHTTPRequestOperation *operation, NSError *error);
+
+//todo:review and remove
+typedef NSURL *(^CALLBACK_DATA_DESTINATION)(NSURL *targetPath, NSURLResponse *response);
+
+typedef void (^CALLBACK_DATA_COMPLETE)(NSURLResponse *response, NSURL *filePath, NSError *error);
+
 @implementation ManagerRemote
 {
-
+    AFHTTPRequestOperationManager *_managerRequests;
 }
 
+- (id)init
+{
+    self = [super init];
 
-- (void)sendRequest:(NSInteger)requestType onComplete:(SEL)onComplete
+    if (self != nil)
+    {
+        _managerRequests = [AFHTTPRequestOperationManager manager];
+    }
+
+    return self;
+}
+
+- (void)sendRequest:(NSInteger)requestType onComplete:(CALLBACK_WITH_RESPONSE)onComplete
 {
     [self sendRequest:requestType data:nil onComplete:onComplete onError:nil];
 }
@@ -22,40 +43,49 @@
     [self sendRequest:requestType data:data onComplete:nil onError:nil];
 }
 
-- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete
+- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(CALLBACK_WITH_RESPONSE)onComplete
 {
     [self sendRequest:requestType data:data onComplete:onComplete onError:nil];
 }
 
-- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(SEL)onComplete onError:(SEL)onError
+- (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(CALLBACK_WITH_RESPONSE)onComplete onError:(CALLBACK_WITH_RESPONSE)onError
 {
-    NSData *returnedData = nil;
-
-    NSError * error = nil;
-
-    NSDictionary * response = [NSJSONSerialization JSONObjectWithData:returnedData options:0 error:&error];
-
-    if (onComplete != nil)
+    CALLBACK_RESPONSE_OK callbackOk = ^(AFHTTPRequestOperation *operation, id responseObject)
     {
-        [self performSelectorOnMainThread:onComplete withObject:response waitUntilDone:false];
-    }
+        NSDictionary * response = (NSDictionary *) responseObject;
 
-    //todo:use
-//    if ([self _isRequestError:jsonData])
-//    {
-//        return jsonData;
-//    }
-}
+        if ([self _isResponseError:response])
+        {
+            if (onError != nil)
+            {
+                onError(response);
+            }
+        }
+        else if (onComplete != nil)
+        {
+            onComplete(response);
+        }
 
-- (void)getRequestTo:(NSString *)url
-{
-    NSURL * urlObject = [NSURL URLWithString:url];
+        NSLog(@"JSON: %@", responseObject);
+    };
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:urlObject cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:60.0];
+    CALLBACK_RESPONSE_ERROR callbackError = ^(AFHTTPRequestOperation *operation, NSError *error)
+    {
+        NSDictionary * response = @{@"status" : @"error", @"response" : error.description};
 
-    [request setHTTPMethod:@"GET"];
+        if (onError != nil)
+        {
+            onError(response);
+        }
 
-    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+        NSLog(@"Error: %@", error);
+    };
+
+    //todo:build url
+
+    NSString * url = @"https://api.fixer.io/latest";
+
+    [_managerRequests GET:url parameters:nil success:callbackOk failure:callbackError];
 }
 
 - (BOOL)_isResponseError:(NSDictionary *)jsonData
@@ -65,14 +95,34 @@
     return status == nil || [status isEqualToString:@"error"];
 }
 
-- (void)downloadImageFrom:(NSString *)urlImage callback:(SEL)callback
-{
-    //todo:finish it
-//    NSURL * url = [NSURL URLWithString:@"http://cs9542.vk.me/u78598353/a_1e6147a8.jpg"];
-//    NSData *data = [NSData dataWithContentsOfURL:url];
-//    UIImage *result = [[UIImage alloc] initWithData:data];
+//- (void)downloadImageFrom:(NSString *)urlImage to:(UIImage *)image
+//{
+//    [_managerDownload setI]
+//    - (void)setImageWithURL:(NSURL *)url
+//    placeholderImage:(nullable UIImage *)placeholderImage;
+//}
+//
+//
+//- (void)downloadImageFrom:(NSString *)urlImage callback:(CALLBACK_WITH_IMAGE)callback
+//{
+//    CALLBACK_DATA_DESTINATION callbackDestination = ^NSURL *(NSURL *targetPath, NSURLResponse *response)
+//    {
+//        NSURL * documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+//        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+//    };
+//
+//    CALLBACK_DATA_COMPLETE callbackComplete = ^(NSURLResponse *response, NSURL *filePath, NSError *error)
+//    {
+//        NSLog(@"File downloaded to: %@", filePath);
+//    };
+//
+//    NSURL * url = [NSURL URLWithString:urlImage];
+//    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+//
+//    NSURLSessionDownloadTask *downloadTask = [_managerDownload downloadTaskWithRequest:request progress:nil destination:callbackDestination completionHandler:callbackComplete];
+//
+//    [downloadTask resume];
+//}
 
-//    return result;
-}
 
 @end

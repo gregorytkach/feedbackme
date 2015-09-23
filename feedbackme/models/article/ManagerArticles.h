@@ -6,7 +6,36 @@
 #import <Foundation/Foundation.h>
 #import "ManagerBase.h"
 
+@class ArticleInfo;
+@class CategoryInfo;
+
 
 @interface ManagerArticles : ManagerBase
+
+
+/*
+ *  Properties
+ */
+
+
+//! Array of CategoryInfo
+@property(readonly) NSArray *categories;
+
+//! Array of ArticleInfo
+@property(readonly) NSArray *articlesList;
+
+@property(strong) CategoryInfo *currentCategory;
+
+@property(strong) ArticleInfo *currentArticle;
+
+/*
+ *  Methods
+ */
+
+//! Default initializer
+- (id)init;
+
+- (NSArray *)getArticlesForCategory:(int)type;
+
 
 @end
