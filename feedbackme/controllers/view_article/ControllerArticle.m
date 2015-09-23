@@ -23,20 +23,13 @@
 
     currentTitle.text = _currentArticle.title;
 
-    currentImage.image = self.convertDataToImage;
+    //currentImage.image =
 
     currentText.text = _currentArticle.text;
     
     currentQuestion.text = _currentArticle.question;
     
 
-}
-
--(UIImage *) convertDataToImage {
-
-    UIImage *result = [UIImage imageWithData:_currentArticle.urlImage];
-
-    return result;
 }
 
 

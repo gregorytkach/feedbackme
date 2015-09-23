@@ -18,7 +18,7 @@
 
 - (NSString *)title;
 
-- (NSData *)urlImage;
+- (NSString *)urlImage;
 
 - (NSString *)text;
 
