@@ -19,31 +19,48 @@
     //todo:remove this stub
     _currentArticle = [[ArticleInfo alloc] init];
 
+
     currentTitle.text = _currentArticle.title;
-
-
-    currentText.text = _currentArticle.text;
 
     [currentImage setImageWithURL:[NSURL URLWithString:_currentArticle.urlImage]];
 
+    currentText.text = _currentArticle.text;
+
+    currentQuestion.text = _currentArticle.question;
+
+    [self initAnswerButton];
+
 }
+
+
+- (void)action {
+
+}
+
+- (void)initAnswerButton {
+
+    int y = 450;
+
+    for (int i = 0; i < _currentArticle.answers.count; i++) {
+        UIButton *answerKey = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [answerKey addTarget:self
+                      action:@selector(action:)
+            forControlEvents:UIControlEventTouchUpInside];
+        [answerKey setTitle:_currentArticle.answers[i] forState:UIControlStateNormal];
+        answerKey.frame = CGRectMake(80.0, y, 160.0, 22.0);
+        [answerKey setBackgroundColor:[UIColor blueColor]];
+        [answerKey setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+
+        [self.view addSubview:answerKey];
+        y += 27;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)createVoteButtons:(id)o {
-
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [button addTarget:self
-               action:@selector(createVoteButtons:)
-     forControlEvents:UIControlEventTouchUpInside];
-    [button setTitle:@"Show View" forState:UIControlStateNormal];
-    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
-    for (int i; i < sizeof(_currentArticle.answers); i++) {
-        [self.view addSubview:button];
-    }
-}
 
 @end

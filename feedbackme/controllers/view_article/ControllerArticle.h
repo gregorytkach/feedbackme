@@ -15,7 +15,8 @@
     IBOutlet UILabel *currentQuestion;
 }
 
+- (void)action;
 
-- (void)createVoteButtons:(id)o;
+- (void)initAnswerButton;
 
 @end
