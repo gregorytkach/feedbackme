@@ -6,12 +6,9 @@
 #import <AFNetworking/UIImageView+AFNetworking.h>
 #import "ControllerArticle.h"
 #import "ArticleInfo.h"
-#import "AppInfo.h"
-#import "ManagerRemote.h"
 
 
-@implementation ControllerArticle 
-{
+@implementation ControllerArticle {
     ArticleInfo *_currentArticle;
 
 }
@@ -28,11 +25,25 @@
     currentText.text = _currentArticle.text;
 
     [currentImage setImageWithURL:[NSURL URLWithString:_currentArticle.urlImage]];
+
 }
 
-- (void)didReceiveMemoryWarning 
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)createVoteButtons:(id)o {
+
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self
+               action:@selector(createVoteButtons:)
+     forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"Show View" forState:UIControlStateNormal];
+    button.frame = CGRectMake(80.0, 210.0, 160.0, 40.0);
+    for (int i; i < sizeof(_currentArticle.answers); i++) {
+        [self.view addSubview:button];
+    }
+}
+
 @end
