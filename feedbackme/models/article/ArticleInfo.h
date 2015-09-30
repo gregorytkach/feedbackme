@@ -24,7 +24,7 @@
 
 - (NSString *)question;
 
-- (NSArray *) answers;
+- (NSArray *)answers;
 
 
 @end
