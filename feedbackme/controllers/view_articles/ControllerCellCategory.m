@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Казанцев Алексей. All rights reserved.
 //
 
-#import "ViewCellWithCategory.h"
+#import "ControllerCellCategory.h"
 
-@implementation ViewCellWithCategory
+@implementation ControllerCellCategory
 
 - (void)awakeFromNib {
     // Initialization code

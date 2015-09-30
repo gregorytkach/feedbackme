@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C025C0D1BAD72B900538873 /* ViewCellWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */; };
-		0C025C101BAD73C900538873 /* ViewCellWithCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */; };
+		0C025C0D1BAD72B900538873 /* ControllerCellArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0C1BAD72B900538873 /* ControllerCellArticle.m */; };
+		0C025C101BAD73C900538873 /* ControllerCellCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */; };
+		0CE22C9D1BB31ABE00FF0201 /* ControllerTableArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE22C9C1BB31ABE00FF0201 /* ControllerTableArticles.m */; };
 		52068B2C3CF3A80E22FEB4A4 /* Pods_feedbackme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
 		DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */; };
@@ -33,10 +34,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C025C0B1BAD72B900538873 /* ViewCellWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCellWithImage.h; sourceTree = "<group>"; };
-		0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCellWithImage.m; sourceTree = "<group>"; };
-		0C025C0E1BAD73C900538873 /* ViewCellWithCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewCellWithCategory.h; sourceTree = "<group>"; };
-		0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewCellWithCategory.m; sourceTree = "<group>"; };
+		0C025C0B1BAD72B900538873 /* ControllerCellArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCellArticle.h; sourceTree = "<group>"; };
+		0C025C0C1BAD72B900538873 /* ControllerCellArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCellArticle.m; sourceTree = "<group>"; };
+		0C025C0E1BAD73C900538873 /* ControllerCellCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerCellCategory.h; path = ../view_articles/ControllerCellCategory.h; sourceTree = "<group>"; };
+		0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControllerCellCategory.m; path = ../view_articles/ControllerCellCategory.m; sourceTree = "<group>"; };
+		0CE22C9B1BB31ABE00FF0201 /* ControllerTableArticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTableArticles.h; sourceTree = "<group>"; };
+		0CE22C9C1BB31ABE00FF0201 /* ControllerTableArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTableArticles.m; sourceTree = "<group>"; };
 		20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feedbackme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6490C8A9D9E708372F6B33A2 /* Pods-feedbackme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.debug.xcconfig"; sourceTree = "<group>"; };
 		86A0CDD6307EBEB3DB3EC647 /* Pods-feedbackme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.release.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.release.xcconfig"; sourceTree = "<group>"; };
@@ -116,10 +119,10 @@
 			children = (
 				DD0B62AED7ADB09769132BD2 /* ControllerArticles.h */,
 				DD0B6312E49736F7AEC79078 /* ControllerArticles.m */,
-				0C025C0B1BAD72B900538873 /* ViewCellWithImage.h */,
-				0C025C0C1BAD72B900538873 /* ViewCellWithImage.m */,
-				0C025C0E1BAD73C900538873 /* ViewCellWithCategory.h */,
-				0C025C0F1BAD73C900538873 /* ViewCellWithCategory.m */,
+				0C025C0B1BAD72B900538873 /* ControllerCellArticle.h */,
+				0C025C0C1BAD72B900538873 /* ControllerCellArticle.m */,
+				0CE22C9B1BB31ABE00FF0201 /* ControllerTableArticles.h */,
+				0CE22C9C1BB31ABE00FF0201 /* ControllerTableArticles.m */,
 			);
 			path = view_articles;
 			sourceTree = "<group>";
@@ -189,6 +192,8 @@
 		DD0B656453EA5B51F87A6438 /* view_categories */ = {
 			isa = PBXGroup;
 			children = (
+				0C025C0E1BAD73C900538873 /* ControllerCellCategory.h */,
+				0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */,
 				DD0B6DB3F2FCD89B4C4106EF /* ControllerCategories.m */,
 				DD0B6CC279F0499E4D022BAE /* ControllerCategories.h */,
 			);
@@ -400,10 +405,11 @@
 				DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */,
 				DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */,
 				DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */,
+				0CE22C9D1BB31ABE00FF0201 /* ControllerTableArticles.m in Sources */,
 				DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */,
 				DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */,
-				0C025C101BAD73C900538873 /* ViewCellWithCategory.m in Sources */,
-				0C025C0D1BAD72B900538873 /* ViewCellWithImage.m in Sources */,
+				0C025C101BAD73C900538873 /* ControllerCellCategory.m in Sources */,
+				0C025C0D1BAD72B900538873 /* ControllerCellArticle.m in Sources */,
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
 				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ControllerArticles.h"
 
 @interface ControllerArticles : UIViewController
+{
+    IBOutlet UITableView *controllerArticles;
+}
+
 
 @end
