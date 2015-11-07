@@ -50,9 +50,13 @@ typedef void (^CALLBACK_DATA_COMPLETE)(NSURLResponse *response, NSURL *filePath,
 
 - (void)sendRequest:(NSInteger)requestType data:(id)data onComplete:(CALLBACK_WITH_RESPONSE)onComplete onError:(CALLBACK_WITH_RESPONSE)onError
 {
+    int i = 1;
+
     CALLBACK_RESPONSE_OK callbackOk = ^(AFHTTPRequestOperation *operation, id responseObject)
     {
-        NSDictionary * response = (NSDictionary *) responseObject;
+        NSLog(@"%d", i);
+
+        NSDictionary *response = (NSDictionary *) responseObject;
 
         if ([self _isResponseError:response])
         {
@@ -71,7 +75,7 @@ typedef void (^CALLBACK_DATA_COMPLETE)(NSURLResponse *response, NSURL *filePath,
 
     CALLBACK_RESPONSE_ERROR callbackError = ^(AFHTTPRequestOperation *operation, NSError *error)
     {
-        NSDictionary * response = @{@"status" : @"error", @"response" : error.description};
+        NSDictionary *response = @{@"status" : @"error", @"response" : error.description};
 
         if (onError != nil)
         {
@@ -83,14 +87,14 @@ typedef void (^CALLBACK_DATA_COMPLETE)(NSURLResponse *response, NSURL *filePath,
 
     //todo:build url
 
-    NSString * url = @"https://api.fixer.io/latest";
+    NSString *url = @"https://api.fixer.io/latest";
 
     [_managerRequests GET:url parameters:nil success:callbackOk failure:callbackError];
 }
 
 - (BOOL)_isResponseError:(NSDictionary *)jsonData
 {
-    NSString * status = jsonData[@"status"];
+    NSString *status = jsonData[@"status"];
 
     return status == nil || [status isEqualToString:@"error"];
 }

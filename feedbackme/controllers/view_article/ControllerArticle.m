@@ -10,7 +10,7 @@
 #import "ManagerRemote.h"
 
 
-@implementation ControllerArticle 
+@implementation ControllerArticle
 {
     ArticleInfo *_currentArticle;
 
@@ -30,9 +30,10 @@
     [currentImage setImageWithURL:[NSURL URLWithString:_currentArticle.urlImage]];
 }
 
-- (void)didReceiveMemoryWarning 
+- (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 @end
