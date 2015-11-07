@@ -28,7 +28,7 @@
         <!--ViewArticles-->
         <scene sceneID="F2p-zx-k8E">
             <objects>
-                <viewController id="fbT-YD-o99" userLabel="ViewArticles" customClass="ControllerArticles" sceneMemberID="viewController">
+                <viewController id="fbT-YD-o99" userLabel="ViewArticles" customClass="ControllerTableArticles" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xHd-ka-rUF"/>
                         <viewControllerLayoutGuide type="bottom" id="Grd-K2-pMO"/>
