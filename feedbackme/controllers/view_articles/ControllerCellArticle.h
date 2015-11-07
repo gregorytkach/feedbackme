@@ -1,5 +1,5 @@
 //
-//  ViewCellWithCategory.h
+//  ViewCellWithImage.h
 //  feedbackme
 //
 //  Created by Казанцев Алексей on 9/19/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewCellWithCategory : UITableViewCell
+@interface ControllerCellArticle : UITableViewCell
 
 @end

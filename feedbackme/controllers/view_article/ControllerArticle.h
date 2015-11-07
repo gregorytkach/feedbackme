@@ -7,14 +7,16 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ControllerArticle : UIViewController
-{
-   
+@interface ControllerArticle : UIViewController {
+
     IBOutlet UILabel *currentTitle;
     IBOutlet UIImageView *currentImage;
     IBOutlet UILabel *currentText;
     IBOutlet UILabel *currentQuestion;
-    }
--(void)createVoteButtons;
+}
+
+- (void)action;
+
+- (void)initAnswerButton;
 
 @end

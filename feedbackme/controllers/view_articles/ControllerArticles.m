@@ -7,15 +7,19 @@
 //
 
 #import "ControllerArticles.h"
+#import "ControllerTableArticles.h"
 
-@interface ControllerArticles ()
-
-@end
-
-@implementation ControllerArticles
-
+@implementation ControllerArticles {
+    ControllerTableArticles *_controllerTableArticles;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    _controllerTableArticles = [[ControllerTableArticles alloc] init];
+
+    controllerArticles.delegate = _controllerTableArticles;
+    controllerArticles.dataSource = _controllerTableArticles;
+    
     // Do any additional setup after loading the view.
 }
 

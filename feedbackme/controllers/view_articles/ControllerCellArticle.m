@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Казанцев Алексей. All rights reserved.
 //
 
-#import "ViewCellWithImage.h"
+#import "ControllerCellArticle.h"
 
-@implementation ViewCellWithImage
+@implementation ControllerCellArticle
 
 - (void)awakeFromNib {
     // Initialization code
