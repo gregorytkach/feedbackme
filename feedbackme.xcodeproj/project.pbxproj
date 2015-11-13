@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C025C0D1BAD72B900538873 /* ControllerCellArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0C1BAD72B900538873 /* ControllerCellArticle.m */; };
-		0C025C101BAD73C900538873 /* ControllerCellCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */; };
 		0CBF81AE1BEE1A330046A676 /* ControllerCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF81AD1BEE1A330046A676 /* ControllerCategories.m */; };
+		0CCF04C01BF2A34F00BB2285 /* ControllerCellCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF04BF1BF2A34F00BB2285 /* ControllerCellCategory.m */; };
 		52068B2C3CF3A80E22FEB4A4 /* Pods_feedbackme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
 		DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */; };
@@ -35,10 +35,10 @@
 /* Begin PBXFileReference section */
 		0C025C0B1BAD72B900538873 /* ControllerCellArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCellArticle.h; sourceTree = "<group>"; };
 		0C025C0C1BAD72B900538873 /* ControllerCellArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCellArticle.m; sourceTree = "<group>"; };
-		0C025C0E1BAD73C900538873 /* ControllerCellCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ControllerCellCategory.h; path = ../view_articles/ControllerCellCategory.h; sourceTree = "<group>"; };
-		0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ControllerCellCategory.m; path = ../view_articles/ControllerCellCategory.m; sourceTree = "<group>"; };
 		0CBF81AC1BEE1A330046A676 /* ControllerCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCategories.h; sourceTree = "<group>"; };
 		0CBF81AD1BEE1A330046A676 /* ControllerCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCategories.m; sourceTree = "<group>"; };
+		0CCF04BE1BF2A34F00BB2285 /* ControllerCellCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCellCategory.h; sourceTree = "<group>"; };
+		0CCF04BF1BF2A34F00BB2285 /* ControllerCellCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCellCategory.m; sourceTree = "<group>"; };
 		20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feedbackme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6490C8A9D9E708372F6B33A2 /* Pods-feedbackme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.debug.xcconfig"; sourceTree = "<group>"; };
 		86A0CDD6307EBEB3DB3EC647 /* Pods-feedbackme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.release.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,8 +158,8 @@
 				DD0B6A6A1B616CE6E0454791 /* ManagerArticles.h */,
 				DD0B6A00815CB7B099FBB573 /* ArticleInfo.h */,
 				DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */,
-				DD0B62BD4A055F2D48697026 /* CategoryInfo.m */,
 				DD0B638653165E68B560D45A /* CategoryInfo.h */,
+				DD0B62BD4A055F2D48697026 /* CategoryInfo.m */,
 				DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */,
 				DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */,
 				DD0B6B8D7FABA0155280A206 /* AnswerInfo.h */,
@@ -187,10 +187,10 @@
 		DD0B656453EA5B51F87A6438 /* view_categories */ = {
 			isa = PBXGroup;
 			children = (
-				0C025C0E1BAD73C900538873 /* ControllerCellCategory.h */,
-				0C025C0F1BAD73C900538873 /* ControllerCellCategory.m */,
 				0CBF81AC1BEE1A330046A676 /* ControllerCategories.h */,
 				0CBF81AD1BEE1A330046A676 /* ControllerCategories.m */,
+				0CCF04BE1BF2A34F00BB2285 /* ControllerCellCategory.h */,
+				0CCF04BF1BF2A34F00BB2285 /* ControllerCellCategory.m */,
 			);
 			path = view_categories;
 			sourceTree = "<group>";
@@ -402,7 +402,6 @@
 				DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */,
 				DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */,
 				DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */,
-				0C025C101BAD73C900538873 /* ControllerCellCategory.m in Sources */,
 				0C025C0D1BAD72B900538873 /* ControllerCellArticle.m in Sources */,
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
@@ -414,6 +413,7 @@
 				DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */,
 				DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */,
 				0CBF81AE1BEE1A330046A676 /* ControllerCategories.m in Sources */,
+				0CCF04C01BF2A34F00BB2285 /* ControllerCellCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

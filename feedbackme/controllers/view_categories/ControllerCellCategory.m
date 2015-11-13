@@ -1,9 +1,9 @@
 //
-//  ViewCellWithCategory.m
+//  ControllerCellCategory.m
 //  feedbackme
 //
-//  Created by Казанцев Алексей on 9/19/15.
-//  Copyright (c) 2015 Казанцев Алексей. All rights reserved.
+//  Created by Казанцев Алексей on 11/11/15.
+//  Copyright © 2015 Казанцев Алексей. All rights reserved.
 //
 
 #import "ControllerCellCategory.h"

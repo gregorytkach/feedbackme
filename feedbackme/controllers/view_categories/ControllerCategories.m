@@ -7,6 +7,8 @@
 //
 
 #import "ControllerCategories.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "CategoryInfo.h"
 
 @interface ControllerCategories () {
     
@@ -43,7 +45,6 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -65,15 +66,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allCategoriesCell"];
     
+    
     return cell;
 }
+
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
 }
-
-// Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
-// Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
 
 
 

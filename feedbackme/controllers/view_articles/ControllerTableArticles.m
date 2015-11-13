@@ -7,26 +7,35 @@
 //
 
 #import "ControllerTableArticles.h"
-#import "ControllerTableArticles.h"
 
 @implementation ControllerTableArticles
 {
     ControllerTableArticles *_controllerTableArticles;
+    NSMutableArray * categoryArray;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    _controllerTableArticles = [[ControllerTableArticles alloc] init];
-
-    controllerArticles.delegate = _controllerTableArticles;
-    controllerArticles.dataSource = _controllerTableArticles;
     
-    // Do any additional setup after loading the view.
+    categoryArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", @"4", nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [categoryArray count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"currentCategoryCell"];
+    
+    return cell;
 }
 
 /*
