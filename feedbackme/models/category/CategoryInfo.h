@@ -6,14 +6,18 @@
 #import <Foundation/Foundation.h>
 
 
-typedef enum
-{
-    ECT_TOP,
-    ECT_MY,
-    ECT_SYSTEM,
-    ECT_USERS,
-
-    ECT_COUNT //Not used
-} ECategorySortType;
+@interface CategoryInfo : NSObject
 
 
+/*
+ *  Properties
+ */
+
+- (NSString *)sortType;
+
+- (NSString *)type;
+
+- (NSString *)urlImage;
+
+
+@end

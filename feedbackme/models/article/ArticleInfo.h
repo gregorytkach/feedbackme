@@ -24,7 +24,16 @@
 
 - (NSString *)question;
 
+
+//! array of AnswerInfo
 - (NSArray *)answers;
+
+/*
+ * Methods
+ */
+
+//! Default initializer
+- (id)init;
 
 
 @end

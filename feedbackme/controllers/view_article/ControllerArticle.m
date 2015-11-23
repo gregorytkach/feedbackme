@@ -19,7 +19,6 @@
     //todo:remove this stub
     _currentArticle = [[ArticleInfo alloc] init];
 
-
     currentTitle.text = _currentArticle.title;
 
     [currentImage setImageWithURL:[NSURL URLWithString:_currentArticle.urlImage]];
@@ -28,7 +27,7 @@
 
     currentQuestion.text = _currentArticle.question;
 
-    [self initAnswerButton];
+//    [self initAnswerButton];
 
 }
 
@@ -37,12 +36,13 @@
 
 }
 
+//todo: review
 - (void)initAnswerButton
 {
 
     int y = 450;
 
-    for (int i = 0; i < _currentArticle.answers.count; i++)
+    for (NSUInteger i = 0; i < _currentArticle.answers.count; i++)
     {
         UIButton *answerKey = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [answerKey addTarget:self

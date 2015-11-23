@@ -11,10 +11,10 @@
 #import "CategoryInfo.h"
 
 @interface ControllerCategories () {
-    
+
     NSMutableArray * categoriesArray;
     NSMutableArray * categoryTableArray;
-    
+
 }
 
 @end
@@ -32,13 +32,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     categoriesArray = [[NSMutableArray alloc] initWithObjects:@"Лучшее", @"Общество", @"Тематические",nil];
-    
+
     NSMutableArray * categoryNew = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", nil];
     NSMutableArray * categorySocial = [[NSMutableArray alloc] initWithObjects:@"one", @"two", @"three",@"four", nil];
     NSMutableArray * categoryThematic = [[NSMutableArray alloc] initWithObjects:@"один", @"два", @"три", nil];
-    
+
     categoryTableArray = [[NSMutableArray alloc] initWithObjects: categoryNew, categorySocial, categoryThematic, nil];
 
 }
@@ -63,11 +63,12 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allCategoriesCell"];
-    
-    
-    return cell;
+
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"allCategoriesCell"];
+
+
+//    return cell;
+    return nil;
 }
 
 

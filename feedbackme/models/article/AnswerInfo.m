@@ -13,17 +13,17 @@
 
 - (NSInteger)votes
 {
-    return 0;
+    return 1;
 }
 
 - (float)percent
 {
-    return 0;
+    return 5;
 }
 
 - (NSString *)answer
 {
-    return nil;
+    return @"Это вопрос?";
 }
 
 @end

@@ -9,7 +9,7 @@
 @interface AnswerInfo : NSObject
 
 /*
- * Properites
+ * Properties
  */
 
 - (NSInteger)votes;

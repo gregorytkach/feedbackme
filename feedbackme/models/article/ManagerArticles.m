@@ -6,11 +6,12 @@
 #import "ManagerArticles.h"
 #import "ArticleInfo.h"
 #import "CategoryInfo.h"
+#import "ECategorySortType.h"
 
 
 @implementation ManagerArticles
 {
-    NSMutableArray *_categories;
+    NSMutableDictionary *_categoriesMap;
     NSMutableArray *_articlesList;
     //key - category type, value - NSArray of ArticlesInfo
     NSDictionary *_articlesMap;
@@ -23,9 +24,9 @@
  * Properties
  */
 
-- (NSArray *)categories
+- (NSMutableDictionary *)categoriesMaps
 {
-    return _categories;
+    return _categoriesMap;
 }
 
 - (NSArray *)articlesList
@@ -53,11 +54,11 @@
 
 - (void)_initCategories
 {
-    _categories = [[NSMutableArray alloc] init];
+    _categoriesMap = [NSMutableDictionary dictionary];
 
     CategoryInfo *categoryInfo = [[CategoryInfo alloc] init];
 
-    [_categories addObject:categoryInfo];
+    _categoriesMap[ECST_TOP] = categoryInfo;
 }
 
 - (void)_initArticles

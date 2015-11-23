@@ -18,8 +18,8 @@
  */
 
 
-//! Array of CategoryInfo
-@property(readonly) NSArray *categories;
+//! key - category sort type, value - CategoryInfo
+@property(readonly) NSMutableDictionary *categoriesMap;
 
 //! Array of ArticleInfo
 @property(readonly) NSArray *articlesList;

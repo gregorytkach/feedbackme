@@ -4,6 +4,8 @@
 //
 
 #import "CategoryInfo.h"
+#import "ECategorySortType.h"
+#import "ECategoryType.h"
 
 
 @implementation CategoryInfo
@@ -11,14 +13,14 @@
 
 }
 
-- (int)sortType
+- (NSString *)sortType
 {
-    return 0;
+    return ECST_TOP;
 }
 
-- (int)type
+- (NSString *)type
 {
-    return 0;
+    return ECT_BEST_TODAY;
 }
 
 - (NSString *)urlImage

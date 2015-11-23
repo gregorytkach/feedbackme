@@ -12,6 +12,7 @@
 		0CCF04C01BF2A34F00BB2285 /* ControllerCellCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF04BF1BF2A34F00BB2285 /* ControllerCellCategory.m */; };
 		52068B2C3CF3A80E22FEB4A4 /* Pods_feedbackme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
+		DD0B619B4B47701C08733EAD /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6447A102BC91F76C6494 /* CategoryInfo.m */; };
 		DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */; };
 		DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */; };
 		DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */; };
@@ -22,7 +23,6 @@
 		DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */; };
 		DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6047856DE52E0EE96D14 /* ManagerPreferences.m */; };
 		DD0B6842D3CCB6797E4F7973 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = DD0B6942423DC0F8882A4DF1 /* Podfile */; };
-		DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B62BD4A055F2D48697026 /* CategoryInfo.m */; };
 		DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B635D47C327455C9187CB /* FirstViewController.m */; };
 		DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */; };
 		DD0B6BBBB4F3AE92650A3050 /* FactoryResponses.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6C4FAE764C462E886222 /* FactoryResponses.m */; };
@@ -49,16 +49,16 @@
 		DD0B618D26DD4D91832A23A4 /* ControllerAddArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerAddArticle.m; sourceTree = "<group>"; };
 		DD0B625B9C90061A3EA369BE /* ERequestType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERequestType.h; sourceTree = "<group>"; };
 		DD0B62AED7ADB09769132BD2 /* ControllerTableArticles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTableArticles.h; sourceTree = "<group>"; };
-		DD0B62BD4A055F2D48697026 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
 		DD0B62D5DA99125147FDDEAD /* ManagerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerBase.m; sourceTree = "<group>"; };
 		DD0B62DF6621D5E6FCD138FD /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		DD0B6312E49736F7AEC79078 /* ControllerTableArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTableArticles.m; sourceTree = "<group>"; };
 		DD0B635D47C327455C9187CB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		DD0B638653165E68B560D45A /* CategoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryInfo.h; sourceTree = "<group>"; };
 		DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerInfo.m; sourceTree = "<group>"; };
 		DD0B6437CE33D878FCA39C39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD0B6447A102BC91F76C6494 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
 		DD0B65F20DFF3A9B7F321279 /* ManagerPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerPreferences.h; sourceTree = "<group>"; };
 		DD0B67F3E1FF330770973509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD0B681CCAEEE95E7CB46906 /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
 		DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerArticles.m; sourceTree = "<group>"; };
 		DD0B68A3D85621C07FC9BF9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DD0B692520B8590B614F76C0 /* ManagerRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerRemote.m; sourceTree = "<group>"; };
@@ -70,15 +70,16 @@
 		DD0B6B8D7FABA0155280A206 /* AnswerInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerInfo.h; sourceTree = "<group>"; };
 		DD0B6B96B0A3EFEFBB0A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0B6BDC5E6439A75C20FD7E /* UtilsCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsCallbacks.h; sourceTree = "<group>"; };
+		DD0B6BEA2513BBCC582F37FB /* ECategoryType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategoryType.h; sourceTree = "<group>"; };
 		DD0B6C4FAE764C462E886222 /* FactoryResponses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactoryResponses.m; sourceTree = "<group>"; };
 		DD0B6CC8B97980DA5764F713 /* ManagerRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerRemote.h; sourceTree = "<group>"; };
 		DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD0B6D36B4180B349BBF5E06 /* CategoryInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryInfo.h; sourceTree = "<group>"; };
 		DD0B6D8955CFAA0091D6197E /* ControllerAddArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerAddArticle.h; sourceTree = "<group>"; };
 		DD0B6DB6BDE6CF08784BE0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerArticle.m; sourceTree = "<group>"; };
 		DD0B6E45BF00D2ACD1521B6E /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerArticle.h; sourceTree = "<group>"; };
-		DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
 		DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +132,7 @@
 				DD0B62E1707F9B5CF82DCE71 /* article */,
 				DD0B66029BA577AE478061CF /* preferences */,
 				DD0B6C57A62598BA80C62A4A /* base */,
+				DD0B6E59FEADE74BB761DD8C /* category */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -158,9 +160,6 @@
 				DD0B6A6A1B616CE6E0454791 /* ManagerArticles.h */,
 				DD0B6A00815CB7B099FBB573 /* ArticleInfo.h */,
 				DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */,
-				DD0B638653165E68B560D45A /* CategoryInfo.h */,
-				DD0B62BD4A055F2D48697026 /* CategoryInfo.m */,
-				DD0B6EF98D5CFEDB4F5A6D4D /* ECategorySortType.h */,
 				DD0B6421E0C552CCBE3E65A2 /* AnswerInfo.m */,
 				DD0B6B8D7FABA0155280A206 /* AnswerInfo.h */,
 			);
@@ -251,6 +250,17 @@
 				DD0B617BB5E9EA5074E36C42 /* ManagerBase.h */,
 			);
 			path = base;
+			sourceTree = "<group>";
+		};
+		DD0B6E59FEADE74BB761DD8C /* category */ = {
+			isa = PBXGroup;
+			children = (
+				DD0B6447A102BC91F76C6494 /* CategoryInfo.m */,
+				DD0B681CCAEEE95E7CB46906 /* ECategorySortType.h */,
+				DD0B6D36B4180B349BBF5E06 /* CategoryInfo.h */,
+				DD0B6BEA2513BBCC582F37FB /* ECategoryType.h */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		DD0B6F61C89D03AC2E1F2BAA = {
@@ -405,7 +415,6 @@
 				0C025C0D1BAD72B900538873 /* ControllerCellArticle.m in Sources */,
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
-				DD0B68F4F20F8AEEDE19FF7F /* CategoryInfo.m in Sources */,
 				DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */,
 				DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */,
 				DD0B6675BD8672009F3FBF12 /* ControllerTableArticles.m in Sources */,
@@ -414,6 +423,7 @@
 				DD0B6CC4A05ED40D351A03BC /* ManagerBase.m in Sources */,
 				0CBF81AE1BEE1A330046A676 /* ControllerCategories.m in Sources */,
 				0CCF04C01BF2A34F00BB2285 /* ControllerCellCategory.m in Sources */,
+				DD0B619B4B47701C08733EAD /* CategoryInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
