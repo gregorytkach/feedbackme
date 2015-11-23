@@ -4,28 +4,40 @@
 //
 
 #import "CategoryInfo.h"
-#import "ECategorySortType.h"
-#import "ECategoryType.h"
 
 
 @implementation CategoryInfo
 {
-
+    NSString *_type;
+    NSString *_sortType;
 }
 
 - (NSString *)sortType
 {
-    return ECST_TOP;
+    return _sortType;
 }
 
 - (NSString *)type
 {
-    return ECT_BEST_TODAY;
+    return _type;
 }
 
 - (NSString *)urlImage
 {
     return nil;
+}
+
+//todo:remove
+- (void)setSortType:(NSString *)value
+{
+    _sortType = value;
+}
+
+//todo:remove
+- (void)setType:(NSString *)value
+{
+    _type = value;
+
 }
 
 

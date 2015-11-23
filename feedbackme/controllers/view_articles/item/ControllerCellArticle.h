@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ArticleInfo.h"
+
 
 @interface ControllerCellArticle : UITableViewCell
+
+/*
+ * Properties
+ */
+
+@property(strong) ArticleInfo *entity;
+
+/*
+ * Methods
+ */
+
+- (void)awakeFromNib;
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 
 @end

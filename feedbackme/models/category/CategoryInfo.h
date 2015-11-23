@@ -19,5 +19,11 @@
 
 - (NSString *)urlImage;
 
+//todo:remove
+- (void)setSortType:(NSString *)value;
+
+//todo:remove
+- (void)setType:(NSString *)value;
+
 
 @end

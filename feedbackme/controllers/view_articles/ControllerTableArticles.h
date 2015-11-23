@@ -8,12 +8,29 @@
 
 #import <UIKit/UIKit.h>
 #import "ControllerTableArticles.h"
+#import "ControllerPageWithTable.h"
 
-@interface ControllerTableArticles : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@class CategoryInfo;
+
+@interface ControllerTableArticles : ControllerPageWithTable
 {
     IBOutlet UITableView *controllerArticles;
 }
-@property (nonatomic, strong) NSString* categoryName;
+
+/*
+ * Properties
+ */
+
+
+/*
+ * Methods
+ */
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView;
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 
 @end

@@ -7,49 +7,63 @@
 //
 
 #import "ControllerTableArticles.h"
+#import "CategoryInfo.h"
+#import "ManagerArticles.h"
+#import "EStoryboardID.h"
+#import "ControllerCellArticle.h"
+#import "AppInfo.h"
 
 @implementation ControllerTableArticles
 {
-    NSMutableArray * _currentCategory;
+    ManagerArticles *_managerArticles;
+
+    CategoryInfo *_currentCategory;
+    NSArray *_articlesList;
 }
 
+/*
+ * Methods
+ */
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    
-    _currentCategory = [[NSMutableArray alloc] initWithObjects:@"10", @"20", @"30", @"40", @"50",nil];
-    
+
+    _managerArticles = AppInfo.instance.managerArticles;
+
+    _currentCategory = _managerArticles.currentCategory;
+
+    _articlesList = [_managerArticles getArticlesForCategory:_currentCategory.type];
+
+    self.title = _currentCategory.type;
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [_currentCategory count];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _articlesList.count;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
-}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ControllerCellArticle *result = (ControllerCellArticle *) [tableView dequeueReusableCellWithIdentifier:ESID_CELL_ARTICLE forIndexPath:indexPath];
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
-    
-    NSString *tempCategory = [_currentCategory objectAtIndex:[indexPath row]];
-    
-    UILabel *titleNameLabel = (UILabel*)[[cell contentView] viewWithTag:3];
-    titleNameLabel.text = tempCategory;
-    
-    
-    return cell;
-}
+    ArticleInfo *entity = _articlesList[(NSUInteger) indexPath.row];
 
+    result.entity = entity;
+
+    return result;
+}
 
 @end

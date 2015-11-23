@@ -24,6 +24,10 @@
 
 - (NSString *)question;
 
+- (NSString *)categoryType;
+
+//todo:remove after implement server side
+- (void)setCategoryType:(NSString *)value;
 
 //! array of AnswerInfo
 - (NSArray *)answers;
@@ -34,6 +38,8 @@
 
 //! Default initializer
 - (id)init;
+
+- (void)deserialize:(id)data;
 
 
 @end

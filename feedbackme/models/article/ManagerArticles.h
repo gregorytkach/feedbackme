@@ -9,17 +9,12 @@
 @class ArticleInfo;
 @class CategoryInfo;
 
-
 @interface ManagerArticles : ManagerBase
-
 
 /*
  *  Properties
  */
 
-
-//! key - category sort type, value - CategoryInfo
-@property(readonly) NSMutableDictionary *categoriesMap;
 
 //! Array of ArticleInfo
 @property(readonly) NSArray *articlesList;
@@ -28,6 +23,8 @@
 
 @property(strong) ArticleInfo *currentArticle;
 
+@property(readonly) NSArray *notEmptySortTypes;
+
 /*
  *  Methods
  */
@@ -35,7 +32,11 @@
 //! Default initializer
 - (id)init;
 
-- (NSArray *)getArticlesForCategory:(int)type;
+- (CategoryInfo *)getCategory:(NSString *)sortType index:(NSInteger)index;
+
+- (NSArray *)getCategoriesSortType:(NSString *)type;
+
+- (NSArray *)getArticlesForCategory:(NSString *)type;
 
 
 @end

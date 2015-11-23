@@ -6,11 +6,21 @@
 //  Copyright © 2015 Казанцев Алексей. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ControllerItemBase.h"
+#import "CategoryInfo.h"
 
-@interface ControllerCellCategory : UITableViewCell
-    
 
+@interface ControllerCellCategory : ControllerItemBase
+
+/*
+ * Properties
+ */
+
+@property(strong) CategoryInfo *entity;
+
+/*
+ * Methods
+ */
 
 
 @end

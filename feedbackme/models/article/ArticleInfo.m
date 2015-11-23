@@ -10,6 +10,8 @@
 @implementation ArticleInfo
 {
     NSMutableArray *_answers;
+
+    NSString *_categoryType;
 }
 
 /*
@@ -47,6 +49,17 @@
     return _answers;
 }
 
+- (NSString *)categoryType
+{
+    return _categoryType;
+}
+
+- (void)setCategoryType:(NSString *)value
+{
+    _categoryType = value;
+}
+
+
 /*
  * Methods
  */
@@ -69,5 +82,9 @@
     return self;
 }
 
+- (void)deserialize:(id)data
+{
+    //todo: implement
+}
 
 @end

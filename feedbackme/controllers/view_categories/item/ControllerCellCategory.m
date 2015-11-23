@@ -9,12 +9,20 @@
 #import "ControllerCellCategory.h"
 
 @implementation ControllerCellCategory
-
-- (void)awakeFromNib {
-    // Initialization code
+{
+    CategoryInfo *_entity;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)awakeFromNib
+{
+    // Initialization code
+
+    UILabel *titleNameLabel = (UILabel *) [[self contentView] viewWithTag:1];
+    titleNameLabel.text = _entity.type;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state

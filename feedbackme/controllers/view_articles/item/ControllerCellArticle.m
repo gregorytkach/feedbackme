@@ -9,12 +9,24 @@
 #import "ControllerCellArticle.h"
 
 @implementation ControllerCellArticle
-
-- (void)awakeFromNib {
-    // Initialization code
+{
+    ArticleInfo *_entity;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+/*
+ * Methods
+ */
+
+- (void)awakeFromNib
+{
+    // Initialization code
+
+    UILabel *titleNameLabel = (UILabel *) [[self contentView] viewWithTag:3];
+    titleNameLabel.text = _entity.title;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
