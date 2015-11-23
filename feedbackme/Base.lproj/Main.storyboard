@@ -41,6 +41,7 @@
                                 <connections>
                                     <outlet property="imageCategory" destination="c89-AK-Kyj" id="XBi-GQ-exQ"/>
                                     <outlet property="labelCategory" destination="2Rq-Ig-UYK" id="9qx-7I-1uF"/>
+                                    <segue destination="fbT-YD-o99" kind="push" id="0yf-Le-CcZ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

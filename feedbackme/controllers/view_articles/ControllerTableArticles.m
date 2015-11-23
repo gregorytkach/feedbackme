@@ -10,14 +10,14 @@
 
 @implementation ControllerTableArticles
 {
-    ControllerTableArticles *_controllerTableArticles;
-    NSMutableArray * categoryArray;
+    NSMutableArray * _currentCategory;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    categoryArray = [[NSMutableArray alloc] initWithObjects:@"1", @"2", @"3", @"4", nil];
+    _currentCategory = [[NSMutableArray alloc] initWithObjects:@"10", @"20", @"30", @"40", @"50",nil];
     
 }
 
@@ -25,27 +25,31 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - Table view data source
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [categoryArray count];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_currentCategory count];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 100;
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CategoryCell" forIndexPath:indexPath];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"currentCategoryCell"];
+    NSString *tempCategory = [_currentCategory objectAtIndex:[indexPath row]];
+    
+    UILabel *titleNameLabel = (UILabel*)[[cell contentView] viewWithTag:3];
+    titleNameLabel.text = tempCategory;
+    
     
     return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
