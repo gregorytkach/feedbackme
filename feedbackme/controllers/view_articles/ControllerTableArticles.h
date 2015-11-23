@@ -13,6 +13,7 @@
 {
     IBOutlet UITableView *controllerArticles;
 }
+@property (nonatomic, strong) NSString* categoryName;
 
 
 @end
