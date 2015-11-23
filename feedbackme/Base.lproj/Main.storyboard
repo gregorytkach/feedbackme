@@ -23,10 +23,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gradient-background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-PE-oug">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
-                                            <animations/>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-Ig-UYK">
                                             <rect key="frame" x="8" y="35" width="304" height="30"/>
                                             <animations/>
@@ -34,6 +30,10 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_gradient.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-PE-oug">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                            <animations/>
+                                        </imageView>
                                     </subviews>
                                     <animations/>
                                     <constraints>
@@ -81,7 +81,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brick_texture___19_by_agf81-d3h6wyg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IDC-CZ-CkI">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brick.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IDC-CZ-CkI">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                             <animations/>
                                         </imageView>
@@ -264,9 +264,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="brick_texture___19_by_agf81-d3h6wyg.jpg" width="1280" height="853"/>
+        <image name="bg_gradient.jpg" width="2560" height="1600"/>
+        <image name="brick.jpg" width="1280" height="853"/>
         <image name="first" width="30" height="30"/>
-        <image name="gradient-background.jpg" width="2560" height="1600"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
