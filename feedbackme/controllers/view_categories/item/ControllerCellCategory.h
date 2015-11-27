@@ -17,6 +17,12 @@
  */
 
 @property(strong) CategoryInfo *entity;
+@property (weak, nonatomic) IBOutlet UIImageView *imageCategory;
+@property (weak, nonatomic) IBOutlet UILabel *nameCategory;
+@property (weak, nonatomic) IBOutlet UIImageView *imageBlur;
+@property (weak, nonatomic) IBOutlet UIImageView *sepatatorLine;
+
+
 
 /*
  * Methods

@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define ECST_TOP @"category_sort_type_top"
-#define ECST_MY @"category_sort_type_my"
+#define ECST_TOP    @"category_sort_type_top"
+#define ECST_MY     @"category_sort_type_my"
 #define ECST_SYSTEM @"category_sort_type_system"
-#define ECST_USERS @"category_sort_type_users"
+#define ECST_USERS  @"category_sort_type_users"

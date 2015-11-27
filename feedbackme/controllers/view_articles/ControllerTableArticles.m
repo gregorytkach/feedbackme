@@ -36,6 +36,8 @@
     _articlesList = [_managerArticles getArticlesForCategory:_currentCategory.type];
 
     self.title = _currentCategory.type;
+    
+    self.tableView.backgroundColor = [UIColor blackColor];
 }
 
 - (void)didReceiveMemoryWarning

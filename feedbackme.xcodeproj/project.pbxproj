@@ -10,6 +10,10 @@
 		0C4A1B011C0385F000234634 /* brick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1AFF1C0385F000234634 /* brick.jpg */; };
 		0C4A1B021C0385F000234634 /* bg_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1B001C0385F000234634 /* bg_gradient.jpg */; };
 		0CBF81AE1BEE1A330046A676 /* ControllerTableCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */; };
+		0CD727D71C07584F00789648 /* plus-button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D51C07584F00789648 /* plus-button.jpeg */; };
+		0CD727D81C07584F00789648 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D61C07584F00789648 /* back-button.png */; };
+		0CD727DA1C08D9D800789648 /* test_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D91C08D9D800789648 /* test_image.jpeg */; };
+		0CD727DC1C08DA9A00789648 /* test_image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727DB1C08DA9A00789648 /* test_image2.jpg */; };
 		52068B2C3CF3A80E22FEB4A4 /* Pods_feedbackme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
 		DD0B619B4B47701C08733EAD /* CategoryInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6447A102BC91F76C6494 /* CategoryInfo.m */; };
@@ -41,6 +45,10 @@
 		0C4A1B001C0385F000234634 /* bg_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_gradient.jpg; path = assets/bg_gradient.jpg; sourceTree = "<group>"; };
 		0CBF81AC1BEE1A330046A676 /* ControllerTableCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTableCategories.h; sourceTree = "<group>"; };
 		0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTableCategories.m; sourceTree = "<group>"; };
+		0CD727D51C07584F00789648 /* plus-button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "plus-button.jpeg"; path = "../../Downloads/plus-button.jpeg"; sourceTree = "<group>"; };
+		0CD727D61C07584F00789648 /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-button.png"; path = "../../Downloads/back-button.png"; sourceTree = "<group>"; };
+		0CD727D91C08D9D800789648 /* test_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test_image.jpeg; path = ../../Downloads/test_image.jpeg; sourceTree = "<group>"; };
+		0CD727DB1C08DA9A00789648 /* test_image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test_image2.jpg; path = ../../Downloads/test_image2.jpg; sourceTree = "<group>"; };
 		20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feedbackme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6490C8A9D9E708372F6B33A2 /* Pods-feedbackme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.debug.xcconfig"; sourceTree = "<group>"; };
 		86A0CDD6307EBEB3DB3EC647 /* Pods-feedbackme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.release.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +117,10 @@
 		0C4A1B041C03895300234634 /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				0CD727DB1C08DA9A00789648 /* test_image2.jpg */,
+				0CD727D91C08D9D800789648 /* test_image.jpeg */,
+				0CD727D51C07584F00789648 /* plus-button.jpeg */,
+				0CD727D61C07584F00789648 /* back-button.png */,
 				0C4A1AFF1C0385F000234634 /* brick.jpg */,
 				0C4A1B001C0385F000234634 /* bg_gradient.jpg */,
 			);
@@ -197,8 +209,8 @@
 		DD0B63770BB3396A007091A0 /* item */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B6F3E6B28543B07241A13 /* ControllerItemBase.m */,
 				DD0B6F5E99F5EFE6F7BDC50A /* ControllerItemBase.h */,
+				DD0B6F3E6B28543B07241A13 /* ControllerItemBase.m */,
 			);
 			path = item;
 			sourceTree = "<group>";
@@ -223,8 +235,8 @@
 		DD0B6536A82FCE0796F103E4 /* view_with_table */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B6E7AC27191C147694823 /* ControllerPageWithTable.m */,
 				DD0B6BEAD99B7C052150AFE4 /* ControllerPageWithTable.h */,
+				DD0B6E7AC27191C147694823 /* ControllerPageWithTable.m */,
 				DD0B63770BB3396A007091A0 /* item */,
 			);
 			path = view_with_table;
@@ -301,8 +313,8 @@
 		DD0B6C57A62598BA80C62A4A /* base */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B62D5DA99125147FDDEAD /* ManagerBase.m */,
 				DD0B617BB5E9EA5074E36C42 /* ManagerBase.h */,
+				DD0B62D5DA99125147FDDEAD /* ManagerBase.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -310,9 +322,9 @@
 		DD0B6E59FEADE74BB761DD8C /* category */ = {
 			isa = PBXGroup;
 			children = (
+				DD0B6D36B4180B349BBF5E06 /* CategoryInfo.h */,
 				DD0B6447A102BC91F76C6494 /* CategoryInfo.m */,
 				DD0B681CCAEEE95E7CB46906 /* ECategorySortType.h */,
-				DD0B6D36B4180B349BBF5E06 /* CategoryInfo.h */,
 				DD0B6BEA2513BBCC582F37FB /* ECategoryType.h */,
 			);
 			path = category;
@@ -384,7 +396,7 @@
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					DD0B62CD38E903EBD6A556CC = {
-						DevelopmentTeam = UN4HT84AGH;
+						DevelopmentTeam = 7X8LN444F9;
 					};
 				};
 			};
@@ -410,12 +422,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD727DC1C08DA9A00789648 /* test_image2.jpg in Resources */,
+				0CD727D71C07584F00789648 /* plus-button.jpeg in Resources */,
 				0C4A1B011C0385F000234634 /* brick.jpg in Resources */,
 				DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */,
 				DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */,
+				0CD727D81C07584F00789648 /* back-button.png in Resources */,
 				0C4A1B021C0385F000234634 /* bg_gradient.jpg in Resources */,
 				DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */,
 				DD0B6842D3CCB6797E4F7973 /* Podfile in Resources */,
+				0CD727DA1C08D9D800789648 /* test_image.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

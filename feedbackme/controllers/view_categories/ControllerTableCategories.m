@@ -38,9 +38,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+        
     _managerArticles = AppInfo.instance.managerArticles;
     _notEmptySortTypes = _managerArticles.notEmptySortTypes;
+    
+    self.tableView.backgroundColor = [UIColor blackColor];
 }
 
 #pragma mark - Table view data source
@@ -54,6 +56,17 @@
 {
     //todo: localize
     return _notEmptySortTypes[(NSUInteger) section];
+}
+
+// todo: change textLabel color
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    view.tintColor = [UIColor blackColor];
+    
+    UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
+    [header.textLabel setTextColor:[UIColor whiteColor]];
+    [header.textLabel setTextAlignment:NSTextAlignmentCenter];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

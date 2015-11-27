@@ -17,6 +17,9 @@
  */
 
 @property(strong) ArticleInfo *entity;
+@property (weak, nonatomic) IBOutlet UIImageView *imageArticle;
+@property (weak, nonatomic) IBOutlet UILabel *nameArticle;
+
 
 /*
  * Methods
