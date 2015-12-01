@@ -66,8 +66,15 @@
     UITableViewHeaderFooterView *header = (UITableViewHeaderFooterView *)view;
     [header.textLabel setTextColor:[UIColor whiteColor]];
     [header.textLabel setTextAlignment:NSTextAlignmentCenter];
+    header.textLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
     
 }
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    
+    return 40;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
