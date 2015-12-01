@@ -10,9 +10,6 @@
 		0C4A1B011C0385F000234634 /* brick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1AFF1C0385F000234634 /* brick.jpg */; };
 		0C4A1B021C0385F000234634 /* bg_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1B001C0385F000234634 /* bg_gradient.jpg */; };
 		0CBF81AE1BEE1A330046A676 /* ControllerTableCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */; };
-		0CD727D71C07584F00789648 /* plus-button.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D51C07584F00789648 /* plus-button.jpeg */; };
-		0CD727D81C07584F00789648 /* back-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D61C07584F00789648 /* back-button.png */; };
-		0CD727DA1C08D9D800789648 /* test_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727D91C08D9D800789648 /* test_image.jpeg */; };
 		0CD727DC1C08DA9A00789648 /* test_image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0CD727DB1C08DA9A00789648 /* test_image2.jpg */; };
 		52068B2C3CF3A80E22FEB4A4 /* Pods_feedbackme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B643C97D13642A3C6DC7B /* LaunchScreen.storyboard */; };
@@ -46,9 +43,6 @@
 		0CA1B8321C092206002395DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CBF81AC1BEE1A330046A676 /* ControllerTableCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTableCategories.h; sourceTree = "<group>"; };
 		0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTableCategories.m; sourceTree = "<group>"; };
-		0CD727D51C07584F00789648 /* plus-button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "plus-button.jpeg"; path = "../../Downloads/plus-button.jpeg"; sourceTree = "<group>"; };
-		0CD727D61C07584F00789648 /* back-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-button.png"; path = "../../Downloads/back-button.png"; sourceTree = "<group>"; };
-		0CD727D91C08D9D800789648 /* test_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test_image.jpeg; path = ../../Downloads/test_image.jpeg; sourceTree = "<group>"; };
 		0CD727DB1C08DA9A00789648 /* test_image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test_image2.jpg; path = ../../Downloads/test_image2.jpg; sourceTree = "<group>"; };
 		20193AFC6B72D4E0E86AA0C7 /* Pods_feedbackme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_feedbackme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6490C8A9D9E708372F6B33A2 /* Pods-feedbackme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-feedbackme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-feedbackme/Pods-feedbackme.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,9 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				0CD727DB1C08DA9A00789648 /* test_image2.jpg */,
-				0CD727D91C08D9D800789648 /* test_image.jpeg */,
-				0CD727D51C07584F00789648 /* plus-button.jpeg */,
-				0CD727D61C07584F00789648 /* back-button.png */,
 				0C4A1AFF1C0385F000234634 /* brick.jpg */,
 				0C4A1B001C0385F000234634 /* bg_gradient.jpg */,
 			);
@@ -423,15 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CD727DC1C08DA9A00789648 /* test_image2.jpg in Resources */,
-				0CD727D71C07584F00789648 /* plus-button.jpeg in Resources */,
 				0C4A1B011C0385F000234634 /* brick.jpg in Resources */,
 				DD0B62D2C3DD4A46C6383EF9 /* Assets.xcassets in Resources */,
 				DD0B604288A08C223EBBD9D0 /* LaunchScreen.storyboard in Resources */,
-				0CD727D81C07584F00789648 /* back-button.png in Resources */,
 				0C4A1B021C0385F000234634 /* bg_gradient.jpg in Resources */,
 				DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */,
 				DD0B6842D3CCB6797E4F7973 /* Podfile in Resources */,
-				0CD727DA1C08D9D800789648 /* test_image.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
