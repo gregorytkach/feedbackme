@@ -43,6 +43,7 @@
 /* Begin PBXFileReference section */
 		0C4A1AFF1C0385F000234634 /* brick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brick.jpg; path = assets/brick.jpg; sourceTree = "<group>"; };
 		0C4A1B001C0385F000234634 /* bg_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_gradient.jpg; path = assets/bg_gradient.jpg; sourceTree = "<group>"; };
+		0CA1B8321C092206002395DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CBF81AC1BEE1A330046A676 /* ControllerTableCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTableCategories.h; sourceTree = "<group>"; };
 		0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTableCategories.m; sourceTree = "<group>"; };
 		0CD727D51C07584F00789648 /* plus-button.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "plus-button.jpeg"; path = "../../Downloads/plus-button.jpeg"; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		DD0B6447A102BC91F76C6494 /* CategoryInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryInfo.m; sourceTree = "<group>"; };
 		DD0B6585BBED7478612E6A22 /* EStoryboardID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EStoryboardID.h; sourceTree = "<group>"; };
 		DD0B65F20DFF3A9B7F321279 /* ManagerPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerPreferences.h; sourceTree = "<group>"; };
-		DD0B67F3E1FF330770973509 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD0B67F76524AC287DE6DDC6 /* ControllerCellCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCellCategory.m; sourceTree = "<group>"; };
 		DD0B681CCAEEE95E7CB46906 /* ECategorySortType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECategorySortType.h; sourceTree = "<group>"; };
 		DD0B683B74B842BA5F1D41D5 /* ManagerArticles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerArticles.m; sourceTree = "<group>"; };
@@ -527,7 +527,7 @@
 		DD0B649E6A7D873A213E2F77 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD0B67F3E1FF330770973509 /* Base */,
+				0CA1B8321C092206002395DE /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
