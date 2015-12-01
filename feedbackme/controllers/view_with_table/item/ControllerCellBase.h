@@ -6,7 +6,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface ControllerItemBase : UITableViewCell
+@interface ControllerCellBase : UITableViewCell
 
+
+/*
+ * Methods
+ */
+
+- (void)awakeFromNib;
 
 @end

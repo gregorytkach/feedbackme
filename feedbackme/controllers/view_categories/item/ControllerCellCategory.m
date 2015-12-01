@@ -15,24 +15,25 @@
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
 
 //    _nameCategory.text = _entity.type;
-    
+
     _nameCategory.font = [UIFont fontWithName:@"Menlo-Bold" size:18];
     _nameCategory.textColor = [UIColor whiteColor];
     _nameCategory.backgroundColor = [UIColor purpleColor];
-    
+
     _sepatatorLine.backgroundColor = _nameCategory.backgroundColor;
-    
-    UIBlurEffect * blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-    UIVisualEffectView * visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
     visualEffectView.frame = CGRectMake(0, 0, _imageBlur.bounds.size.width, _imageBlur.bounds.size.height);
     [_imageBlur addSubview:visualEffectView];
-    
-    
+
+
 }
 
--(void)addBlurLayer
+- (void)addBlurLayer
 {
 
 }

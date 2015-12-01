@@ -6,11 +6,11 @@
 //  Copyright © 2015 Казанцев Алексей. All rights reserved.
 //
 
-#import "ControllerItemBase.h"
+#import "ControllerCellBase.h"
 #import "CategoryInfo.h"
 
 
-@interface ControllerCellCategory : ControllerItemBase
+@interface ControllerCellCategory : ControllerCellBase
 
 /*
  * Properties
@@ -28,5 +28,8 @@
  * Methods
  */
 
+- (void)awakeFromNib;
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 
 @end

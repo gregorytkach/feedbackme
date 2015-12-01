@@ -20,7 +20,7 @@
 		DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B692520B8590B614F76C0 /* ManagerRemote.m */; };
 		DD0B64C0133C9D4007A052BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0B649E6A7D873A213E2F77 /* Main.storyboard */; };
 		DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */; };
-		DD0B66330D5AEB77E530B0C4 /* ControllerItemBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6F3E6B28543B07241A13 /* ControllerItemBase.m */; };
+		DD0B66330D5AEB77E530B0C4 /* ControllerCellBase.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6F3E6B28543B07241A13 /* ControllerCellBase.m */; };
 		DD0B6675BD8672009F3FBF12 /* ControllerTableArticles.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6312E49736F7AEC79078 /* ControllerTableArticles.m */; };
 		DD0B66DF7F990B7C0349714D /* ControllerPageWithTable.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6E7AC27191C147694823 /* ControllerPageWithTable.m */; };
 		DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD0B6CCBA3A95A2F341B7E4D /* AppDelegate.m */; };
@@ -92,8 +92,8 @@
 		DD0B6E7AC27191C147694823 /* ControllerPageWithTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerPageWithTable.m; sourceTree = "<group>"; };
 		DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerArticle.h; sourceTree = "<group>"; };
 		DD0B6EF9E3FEEA6020CF9992 /* ArticleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticleInfo.m; sourceTree = "<group>"; };
-		DD0B6F3E6B28543B07241A13 /* ControllerItemBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerItemBase.m; sourceTree = "<group>"; };
-		DD0B6F5E99F5EFE6F7BDC50A /* ControllerItemBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerItemBase.h; sourceTree = "<group>"; };
+		DD0B6F3E6B28543B07241A13 /* ControllerCellBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerCellBase.m; sourceTree = "<group>"; };
+		DD0B6F5E99F5EFE6F7BDC50A /* ControllerCellBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerCellBase.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +200,8 @@
 		DD0B63770BB3396A007091A0 /* item */ = {
 			isa = PBXGroup;
 			children = (
-				DD0B6F5E99F5EFE6F7BDC50A /* ControllerItemBase.h */,
-				DD0B6F3E6B28543B07241A13 /* ControllerItemBase.m */,
+				DD0B6F5E99F5EFE6F7BDC50A /* ControllerCellBase.h */,
+				DD0B6F3E6B28543B07241A13 /* ControllerCellBase.m */,
 			);
 			path = item;
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 				DD0B619B4B47701C08733EAD /* CategoryInfo.m in Sources */,
 				DD0B66DF7F990B7C0349714D /* ControllerPageWithTable.m in Sources */,
 				DD0B6AB88A15F9ED6D21D4BA /* ControllerCellCategory.m in Sources */,
-				DD0B66330D5AEB77E530B0C4 /* ControllerItemBase.m in Sources */,
+				DD0B66330D5AEB77E530B0C4 /* ControllerCellBase.m in Sources */,
 				DD0B6F79C85D381FB12D938C /* ControllerCellArticle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
