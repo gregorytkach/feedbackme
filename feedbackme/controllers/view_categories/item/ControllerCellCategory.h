@@ -8,6 +8,8 @@
 
 #import "ControllerCellBase.h"
 #import "CategoryInfo.h"
+#import "FXBlurView.h"
+
 
 
 @interface ControllerCellCategory : ControllerCellBase
@@ -17,9 +19,9 @@
  */
 
 @property(strong) CategoryInfo *entity;
+
 @property (weak, nonatomic) IBOutlet UIImageView *imageCategory;
 @property (weak, nonatomic) IBOutlet UILabel *nameCategory;
-@property (weak, nonatomic) IBOutlet UIImageView *imageBlur;
 @property (weak, nonatomic) IBOutlet UIImageView *sepatatorLine;
 
 
@@ -29,7 +31,7 @@
  */
 
 - (void)awakeFromNib;
-
+- (void)addBlurLayer;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "ControllerCellArticle.h"
+#import "FXBlurView.h"
+
 
 @implementation ControllerCellArticle
 {
@@ -19,11 +21,36 @@
 
 - (void)awakeFromNib
 {
-    // Initialization code
+    [super awakeFromNib];
+//    _nameArticle.text = _entity.title;
 
-    UILabel *titleNameLabel = (UILabel *) [[self contentView] viewWithTag:3];
-    titleNameLabel.text = _entity.title;
+// remove after set
+    _nameArticle.text = @"and here very loooong text tooooooo";
+    
+    _nameArticle.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
+    NSString *uppercase = [_nameArticle.text uppercaseString];
+    _nameArticle.text =  uppercase;
+    _nameArticle.textColor = [UIColor whiteColor];
+    
+//todo: set correct color
+    _nameArticle.backgroundColor = [UIColor purpleColor];
+    _sepatatorLineArticle.backgroundColor = _nameArticle.backgroundColor;
+    
+    [self addBlurLayer];
 }
+
+- (void)addBlurLayer
+{
+    FXBlurView * blurEffect = [[FXBlurView alloc] initWithFrame:CGRectMake(0, 70, 500, 30)];
+    blurEffect.tintColor = [UIColor clearColor];
+    blurEffect.updateInterval = 1;
+    blurEffect.blurRadius = 4.f;
+    blurEffect.dynamic = NO;
+    [_imageArticle addSubview:blurEffect];
+}
+
+
+
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {

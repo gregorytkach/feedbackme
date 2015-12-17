@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C007DEA1C18C86800D72082 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C007DE91C18C86800D72082 /* FXBlurView.m */; };
+		0C007E321C1B210C00D72082 /* TopSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C007E311C1B210C00D72082 /* TopSideViewController.m */; };
+		0C007E351C1B212400D72082 /* DownSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C007E341C1B212400D72082 /* DownSideViewController.m */; };
 		0C4A1B011C0385F000234634 /* brick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1AFF1C0385F000234634 /* brick.jpg */; };
 		0C4A1B021C0385F000234634 /* bg_gradient.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1B001C0385F000234634 /* bg_gradient.jpg */; };
 		0CBF81AE1BEE1A330046A676 /* ControllerTableCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBF81AD1BEE1A330046A676 /* ControllerTableCategories.m */; };
@@ -38,6 +41,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C007DE81C18C86800D72082 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = "../../../Downloads/FXBlurView-master/FXBlurView/FXBlurView.h"; sourceTree = "<group>"; };
+		0C007DE91C18C86800D72082 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = "../../../Downloads/FXBlurView-master/FXBlurView/FXBlurView.m"; sourceTree = "<group>"; };
+		0C007E301C1B210C00D72082 /* TopSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopSideViewController.h; sourceTree = "<group>"; };
+		0C007E311C1B210C00D72082 /* TopSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopSideViewController.m; sourceTree = "<group>"; };
+		0C007E331C1B212400D72082 /* DownSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownSideViewController.h; sourceTree = "<group>"; };
+		0C007E341C1B212400D72082 /* DownSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownSideViewController.m; sourceTree = "<group>"; };
 		0C4A1AFF1C0385F000234634 /* brick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = brick.jpg; path = assets/brick.jpg; sourceTree = "<group>"; };
 		0C4A1B001C0385F000234634 /* bg_gradient.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_gradient.jpg; path = assets/bg_gradient.jpg; sourceTree = "<group>"; };
 		0CA1B8321C092206002395DE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -218,6 +227,8 @@
 		DD0B63ADFCC247D0A43CE081 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0C007DE81C18C86800D72082 /* FXBlurView.h */,
+				0C007DE91C18C86800D72082 /* FXBlurView.m */,
 				DD0B6437CE33D878FCA39C39 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -297,6 +308,10 @@
 			children = (
 				DD0B6EB9D7EC3EC714F3EBF4 /* ControllerArticle.h */,
 				DD0B6DEA5857565EF8F721B7 /* ControllerArticle.m */,
+				0C007E301C1B210C00D72082 /* TopSideViewController.h */,
+				0C007E311C1B210C00D72082 /* TopSideViewController.m */,
+				0C007E331C1B212400D72082 /* DownSideViewController.h */,
+				0C007E341C1B212400D72082 /* DownSideViewController.m */,
 			);
 			path = view_article;
 			sourceTree = "<group>";
@@ -480,13 +495,16 @@
 			files = (
 				DD0B6F73CC696653EA35C715 /* main.m in Sources */,
 				DD0B67CACD04F1272F5F2AA3 /* AppDelegate.m in Sources */,
+				0C007DEA1C18C86800D72082 /* FXBlurView.m in Sources */,
 				DD0B6A0F7C71DF0298A344E1 /* FirstViewController.m in Sources */,
 				DD0B6ACEE7498AA63E544A3A /* AppInfo.m in Sources */,
 				DD0B64A0A162B61B2ED6ED26 /* ManagerRemote.m in Sources */,
 				DD0B6321D2BEDB30AA14656C /* ManagerArticles.m in Sources */,
 				DD0B651C5DA49C2DBE43C83D /* ArticleInfo.m in Sources */,
 				DD0B6815015BF859BF10B8FC /* ManagerPreferences.m in Sources */,
+				0C007E321C1B210C00D72082 /* TopSideViewController.m in Sources */,
 				DD0B6D6F194AD8930E0632A5 /* AnswerInfo.m in Sources */,
+				0C007E351C1B212400D72082 /* DownSideViewController.m in Sources */,
 				DD0B6F992B8FE6B0205A64B2 /* ControllerAddArticle.m in Sources */,
 				DD0B6675BD8672009F3FBF12 /* ControllerTableArticles.m in Sources */,
 				DD0B62171EE9FD47BFFB6247 /* ControllerArticle.m in Sources */,
@@ -531,7 +549,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = feedbackme/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,7 +645,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = feedbackme/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = some.feedbackme;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,15 +8,21 @@
 
 
 @interface ControllerArticle : UIViewController {
-
-    IBOutlet UILabel *currentTitle;
-    IBOutlet UIImageView *currentImage;
-    IBOutlet UILabel *currentText;
-    IBOutlet UILabel *currentQuestion;
+    
 }
+
+//IBOutlet UILabel *currentTitle;
+//IBOutlet UIImageView *currentImage;
+//IBOutlet UILabel *currentText;
+//IBOutlet UILabel *currentQuestion;
+
+
+
+
+
 
 - (void)action;
 
-- (void)initAnswerButton;
+- (BOOL)prefersStatusBarHidden;
 
 @end
